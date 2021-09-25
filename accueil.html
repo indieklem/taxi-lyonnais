@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Taxi Lyonnais - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="js/nav.js"></script> 
+    <script src="js/footer.js"></script> 
+    <script src="js/siema.min.js"></script>
+    <script src="js/slider.js"></script>
+    
+  </head>
+
+  <body class="p-home">
+
+    <header class="c-header">
+      <nav class="c-header__primary relative bg-white lg:py-16 py-8" aria-label="primary">
+        <div class="container">
+          <div class="row justify-between align-items-center lg:flex none xl:txt-16 txt-14">
+            <div class="col-expand">
+              <ul class="row align-items-center">
+                <li class="col-auto">
+                  <a href="#">
+                    <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                  </a>
+                </li>
+                <li class="col-auto xl:px-8 px-4"><a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Accueil</a></li>
+                <li class="col-auto xl:px-8 px-4"><a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Services</a></li>
+                <li class="col-auto xl:px-8 px-4"><a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Devenez Chauffeur</a></li>
+                <li class="col-auto xl:px-8 px-4"><a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Offre entreprise</a></li>
+                <li class="col-auto xl:px-8 px-4"><a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-auto">
+                <ul class="row align-items-center">
+                    <li class="col-auto px-8">
+                        <div class="c-header__link p-8 no-underline flex align-items-center">
+                            En <img class="ml-8" src="images/flag/en-flag.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="col-auto px-8">
+                        <a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Connexion</a>
+                    </li>
+                    <li class="col-auto px-8">
+                        <a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Réserver un taxi</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+            <div class="lg:none block txt-16">
+                <div class="row justify-between align-items-center">
+                    <div class="col-expand">
+                        <a href="#">
+                            <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="flex align-items-center">
+                            <a class="c-btn c-btn--blue" href="#">Connexion</a>
+                            <a class="c-btn c-btn--rounded c-btn--secondary mx-8" href="#">
+                                <img src="images/icon/phone.svg" alt="">
+                            </a>
+                            <div class="c-btn c-btn--rounded c-btn--secondary c-header__toggleButton" id="js-header__toggleMenu">
+                                <img src="images/icon/menu.svg" class="c-header__btnicon c-header__btnicon--menu" alt="">
+                                <img src="images/icon/cross.svg" class="c-header__btnicon c-header__btnicon--cross" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="js-header__mobile" class="c-header__mobile relative pt-16 mt-16">
+                    <li class="mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Menu</li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Accueil</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Services</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Devenez Chauffeur</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Offre entreprise</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Contact</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Nos services</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 flex" href="#">En <img class="ml-8" src="images/flag/en-flag.svg" alt=""></a></li>
+                    <li class="pt-16 mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Mon compte</li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Connexion</a></li>
+                    <li class="mb-4"><a class="c-header__link p-8 block" href="#">Inscription</a></li>                    
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <nav class="c-header__secondary relative bg-blue-500 align-items-center lg:block none" aria-label="secondary">
+        <div class="container">
+          <ul class="row justify-between align-items-center">
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi VAN</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi PMR</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi VIP</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi VSL</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi Events</a></li>
+            <li class="col-auto"><a href="#" class="c-header__sublink c-header__sublink--menu block no-underline txt-white">Taxi Navette</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="top md:py-128 py-32 relative">
+        <div class="top__background absolute"></div>
+        <div class="container">
+            <div class="row">
+                <div class="md:col-50 col-100 md:order-1 order-2">
+                    <div class="u-block p-32">
+                        <form class="c-form" action="#">
+                            <div class="mb-24">
+                                <label class="c-form__label" for="">Départ</label>
+                                <input class="c-form__input mb-4" type="text">
+                                <div class="row">
+                                    <div class="col-auto txt-14 txt-grey-700">
+                                        <div class="c-form__suboption">Gares & Aéroports</div>
+                                    </div>
+                                    <div class="col-auto txt-14 txt-grey-700">
+                                        <div class="c-form__suboption">Evénement</div>
+                                    </div>
+                                    <div class="col-auto txt-14 txt-grey-700">
+                                        <div class="c-form__suboption">Ma position</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-24">
+                                <label class="c-form__label" for="">Arrivée</label>
+                                <input class="c-form__input mb-4" type="text">
+                                <div class="row">
+                                    <div class="col-auto txt-14 txt-grey-700">
+                                        <div class="c-form__suboption">Gares & Aéroports</div>
+                                    </div>
+                                    <div class="col-auto txt-14 txt-grey-700">
+                                        <div class="c-form__suboption">Evénement</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">Date</label>
+                                        <input type="text" class="c-form__input">
+                                    </div>
+                                </div>
+                                <div class="col-25">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">Heure</label>
+                                        <div class="c-form__select">
+                                            <select name="" id="" class="c-form__input c-form__input--select">
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-25">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">Min.</label>
+                                        <div class="c-form__select">
+                                            <select name="" id="" class="c-form__input c-form__input--select">
+                                                <option value="">5</option>
+                                                <option value="">15</option>
+                                                <option value="">30</option>
+                                                <option value="">45</option>
+                                                <option value="">50</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="c-btn  c-btn--expand mb-16">Commander un taxi</button>
+                            <button class="c-btn c-btn--secondary c-btn--expand mb-16">Recevoir un devis par email</button>
+                            <div class="txt-center">
+                                Je suis <a class="c-form__link" href="#">une entreprise</a> • <a class="c-form__link" href="#">un chauffeur</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="md:col-50 col-100 md:order-2 order-1 txt-blue-900 md:txt-left txt-center md:mb-0 mb-32">
+                    <div class="md:pl-32">
+                        <h1 class="txt-title md:txt-48 txt-32 mb-8">Réserver un Taxi à Lyon</h1>
+                        <h2 class="txt-18">Commander un Taxi Lyonnais en quelques clics.</h2>
+                        <p class="txt-18 mb-24">Disponible 7j/7 24h/24.</p>
+                        <a class="c-btn mb-24" href="#">
+                            <svg class="c-btn__icon mr-16" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Icon / Phone</title>
+                                <g id="Icon-/-Phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path d="M8.26487622,3.24991726 L5.7079056,3.24991726 C5.01703314,3.25076961 4.35896132,3.54090076 3.89352271,4.04976823 C3.42774534,4.55900607 3.19779449,5.2403953 3.25999958,5.92739112 C3.55420573,8.69325401 4.49317146,11.3397384 6.00195007,13.6641453 C7.36987505,15.8126502 9.19969915,17.6388497 11.3578955,19.0075408 C13.670205,20.5041329 16.3085914,21.4408422 19.0552429,21.7386972 C19.7580997,21.802215 20.4418614,21.5714309 20.9521287,21.1042231 C21.462725,20.6367141 21.752274,19.9757972 21.74946,19.2838954 L21.7494662,16.7277612 C21.78024,15.4992933 20.8702793,14.4274554 19.633854,14.2533715 C18.8625242,14.1518118 18.1117528,13.9651574 17.3891752,13.6960604 L17.2084218,13.636112 C16.3589198,13.3904376 15.4342449,13.6201334 14.79707,14.2489693 L14.122,14.921 L13.9094221,14.7873392 C12.4272571,13.8173116 11.160735,12.5533045 10.1888418,11.0741826 L10.054,10.864 L10.7251715,10.1952677 C11.3585203,9.55607552 11.5891925,8.63159661 11.3421505,7.78108693 L11.2818737,7.60009796 C11.0129748,6.88090387 10.826022,6.13190857 10.7252144,5.3690902 C10.5513647,4.14130803 9.4990032,3.23803372 8.26487622,3.24991726 Z M5.70874158,4.74995306 L8.27216954,4.74995306 C8.76147976,4.74527698 9.17181238,5.09747811 9.23908896,5.57251754 C9.35379883,6.44078209 9.56828403,7.30008141 9.87750471,8.12711267 C10.009585,8.47779481 9.9255219,8.87117652 9.66260133,9.13652935 L8.58002504,10.2169446 C8.3406902,10.4558053 8.29078543,10.8252799 8.45817446,11.1190767 C9.74181207,13.3720832 11.6108951,15.2374638 13.8681914,16.5184554 C14.16138,16.6848368 14.5295529,16.6351601 14.768161,16.3970247 L15.8536994,15.3136366 C16.1171422,15.0536582 16.5129346,14.9694147 16.8639902,15.1011146 C17.6940944,15.4102582 18.5548097,15.6242465 19.4314111,15.7396323 C19.9073159,15.8066686 20.2617549,16.2241604 20.2496979,16.7091205 L20.2494662,19.2869456 C20.250566,19.5588889 20.1379738,19.8158888 19.9391748,19.9979119 C19.7400469,20.1802362 19.4729046,20.2704024 19.2034746,20.2461009 C16.7031666,19.974837 14.2885262,19.1175645 12.1670748,17.7445362 C10.1889696,16.4900178 8.5168776,14.821238 7.26368951,12.8529916 C5.87980156,10.7209368 5.02081644,8.2998786 4.75273388,5.78040279 C4.72971721,5.52517996 4.81910064,5.26031942 5.00036188,5.06214516 C5.18192766,4.86363795 5.43899892,4.7503002 5.70874158,4.74995306 Z" id="Path" fill="#081121" fill-rule="nonzero"></path>
+                                </g>
+                            </svg>
+                            Commander un taxi au 04 78 26 81 81
+                        </a>
+                        <div class="flex align-items-center md:justify-start justify-center">
+                            <div class="flex">
+                                <img class="mr-4" src="images/icon/star.svg" alt="">
+                                <img class="mr-4" src="images/icon/star.svg" alt="">
+                                <img class="mr-4" src="images/icon/star.svg" alt="">
+                                <img class="mr-4" src="images/icon/star.svg" alt="">
+                                <img class="mr-16" src="images/icon/star.svg" alt="">
+                            </div>
+                            4.8 / 5 sur 1710 avis clients
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="satisfaction relative pt-80 md:pb-80 pb-32">
+        <div class="satisfaction__decorative absolute"></div>
+        <div class="container">
+            <div class="row align-items-center justify-center">
+                <div class="md:col-80 col-100">
+                    <div class="row">
+                        <div class="col-100">
+                            <div class="relative txt-red-500 txt-14 txt-uppercase txt-title mb-8">
+                                <span class="txt-letter-spacing">Points forts</span>
+                                <div class="absolute satisfaction__textsvg"><img src="images/textsvg/points-forts.svg" alt=""></div>
+                            </div>
+                            <h3 class="txt-32 txt-title mb-32">Points forts et satisfaction de nos services</h3>
+                        </div>
+                        <div class="md:col-33 col-100 md:mb-0 mb-24">
+                            <div class="row">
+                                <div class="md:col-100 col-auto">
+                                    <img class="md:mb-24 mb-0" src="images/illustration/diamond-red.svg" alt="">
+                                </div>
+                                <div class="md:col-100 col-expand">
+                                    <div class="txt-title txt-20 mb-4">Prix</div>
+                                    <p class="txt-grey-600">Prix fixes attractifs comprenant 10 minutes d'attente</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-33 col-100 md:mb-0 mb-24">
+                            <div class="row">
+                                <div class="md:col-100 col-auto">
+                                    <img class="md:mb-24 mb-0" src="images/illustration/heart-red.svg" alt="">
+                                </div>
+                                <div class="md:col-100 col-expand">
+                                    <div class="txt-title txt-20 mb-4">Qualité</div>
+                                    <p class="txt-grey-600">Qualité de service : Certifié ISO 9001:2015</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-33 col-100 md:mb-0 mb-24">
+                            <div class="row">
+                                <div class="md:col-100 col-auto">
+                                    <img class="md:mb-24 mb-0" src="images/illustration/crown-red.svg" alt="">
+                                </div>
+                                <div class="md:col-100 col-expand">
+                                    <div class="txt-title txt-20 mb-4">Service</div>
+                                    <p class="txt-grey-600">Service garantie. 100% des réservations assurées.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="climat md:mb-80 mb-32">
+        <div class="container">
+            <div class="relative climat__bloc md:p-64 py-32 px-24">
+                <div class="absolute climat__decorative"></div>
+                <div class="relative txt-center txt-green-500 txt-14 txt-uppercase txt-title mb-8">
+                    <span class="relative climat__subtitle txt-letter-spacing">Nos engagements</span>
+                    <img class="climat__textsvg" src="images/textsvg/nos-engagements.svg" alt="">
+                </div>
+                <h3 class="relative txt-center txt-32 txt-title md:mb-64 mb-32">TL s'engage face à l'urgence climatique</h3>
+                <div class="row relative align-items-center">
+                    <div class="md:col-50 col-100 md:mb-0 mb-32">
+                        <img style="width:100%;max-height:320px;display:block;" src="images/fake.png" alt="">
+                    </div>
+                    <div class="md:col-50 col-100">
+                        <div class="pl-8">
+                            <div class="txt-title mb-8 txt-24">Les engagements de TL Taxi Lyon</div>
+                            <p class="mb-24 txt-grey-800">Nous pouvons agir contre le dérèglement climatique. TL Taxi Lyon s'engage. La vidéo permet de mieux comprendre comment.</p>
+                            <a class="c-btn c-btn--green" href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application py-80">
+        <div class="container">
+            <div class="row">
+                <div class="md:col-50 col-100">
+                    <div class="relative txt-blue-500 txt-14 txt-uppercase txt-title mb-8">
+                        <span class="relative application__subtitle txt-letter-spacing">L'application Taxi Lyonnais</span>
+                        <img class="application__textsvg" src="images/textsvg/application-taxi-lyonnais.svg" alt="">
+                    </div>
+                    <h3 class="relative txt-32 txt-title mb-8">Réservation taxi à Lyon avec l'application TL</h3>
+                    <p class="mb-24">Téléchargez gratuitement notre application pour réserver un taxi via votre mobile.<br>Disponible sur iPhone et Android</p>
+                    <ul class="mb-24">
+                        <li class="mb-4">
+                            <img src="images/icon/check-blue-500.svg" class="mr-8" alt="">
+                            Réservation de Taxi à prix fixe
+                        </li>
+                        <li class="mb-4">
+                            <img src="images/icon/check-blue-500.svg" class="mr-8" alt="">
+                            Paiement via l'application
+                        </li>
+                        <li class="mb-4">
+                            <img src="images/icon/check-blue-500.svg" class="mr-8" alt="">
+                            Commander un taxi, partout et à tout moment
+                        </li>
+                    </ul>
+
+                    <form action="#" class="application__form mb-32">
+                        <label class="application__label mb-4" for="home__phone">Saisissez votre numéro de téléphone pour recevoir l’application</label>
+                        <div class="relative inlineblock">
+                            <input class="application__input txt-regular txt-16 pl-16" type="tel" id="home__phone">
+                            <button class="application__button c-btn absolute" type="submit">Valider</button>
+                        </div>
+                    </form>
+
+                    <div class="flex mb-32">
+                        <div class="mr-24">
+                            <a href="#"><img class="block application__logo" src="images/logo/logo-appstore.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img class="block application__logo" src="images/logo/logo-google-play.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="application__more flex txt-letter-spacing txt-blue-900 txt-title no-underline txt-uppercase align-items-center">
+                        En savoir plus <img class="ml-16 application__morearrow" src="images/icon/arrow-right.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service md:pt-128 pt-80 relative">
+        <div class="service__decoration absolute"></div>
+        <div class="container">
+            <div class="relative txt-center txt-red-500 txt-14 txt-uppercase txt-title mb-8">
+                <span class="relative service__subtitle txt-letter-spacing">Nos services</span>
+                <img class="service__textsvg" src="images/textsvg/nos-services.svg" alt="">
+            </div>
+            <h3 class="relative txt-center txt-32 txt-title mb-64">Découvrez les différentes<br class="md:block none"> offres Taxi Lyonnais</h3>
+        </div>
+        <div class="siema pt-4 pb-16 lg:mb-64 mb-8">
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-eco.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi</h4>
+                    <p class="pb-16">Un service de qualité au meilleur prix</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Jusqu'a 4 passagers
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Plus de 150 taxis
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Siége-bébé & Réhausseur
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-vip.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi VIP</h4>
+                    <p class="pb-16">Un service haut de gamme</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Jusqu'a 4 passagers
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Berlines de standing & Chauffeurs sélectionnés
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Siège-bébé & Réhausseur
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-minibus.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi Van</h4>
+                    <p class="pb-16">Pour les groupes et les familles</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Jusqu’a 8 passagers
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Bagages volumineux
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Une économie financière certaine
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-minibus.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi Business</h4>
+                    <p class="pb-16">Pour tous vos déplacements professionnels</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Service garanti sur toutes vos réservations
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Tarif à prix fixes
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Espace dédié en ligne et personnalisable
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-events.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi Events</h4>
+                    <p class="pb-16">Sur mesure pour vos besoins spécifiques</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Solutions sur mesure (Soirée entreprise, séminaire ...)
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Mise à disposition d’un coordonateur
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Mode règlement à la carte
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-minibus.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi Navette</h4>
+                    <p class="pb-16">Votre navette pour monter à l'aéroport</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Montez à l'aéroport pour 17.50€
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Choisissez votre lieu et horaire de départ
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Service garantis. 7/7 H24
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-access.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi PMR</h4>
+                    <p class="pb-16">Dédié aux personnes à mobilité réduite</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Jusqu’a 4 passagers et un fauteuil roulant
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Un taxi avec rampe d’accés
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Siège-bébé & Réhausseur
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div href="#" class="u-block p-24 service__block flex justify-between mx-16">
+                <div>
+                    <img class="mb-32 service__logo" src="images/logo/logo-tl-access.svg" alt="">
+                    <h4 class="txt-title txt-24">Taxi VSL</h4>
+                    <p class="pb-16">Transports médicaux avec bon de transport</p>
+                    <ul class="mb-32">
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Jusqu’a 8 passagers
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Aucun frais à avancer
+                        </li>
+                        <li class="flex align-items-center mb-4">
+                            <img class="mr-8" src="images/icon/check-red-500.svg" alt="">
+                            Flotte de 100 chauffeurs conventionnés
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="service__more txt-14 flex txt-letter-spacing txt-title txt-uppercase align-items-center txt-blue-900 no-underline">
+                    En savoir plus <img class="ml-8 service__morearrow" src="images/icon/arrow-right.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container relative pb-80">
+            <div class="lg:absolute relative service__arrows flex lg:mb-0 mb-32">
+                <img id="js-service__prev" src="images/icon/arrow-left-circle.svg" class="service__arrow mr-24" alt="">
+                <img id="js-service__next" src="images/icon/arrow-right-circle.svg" class="service__arrow" alt="">
+            </div>
+            <div class="txt-red-900">
+                <div class="txt-title txt-24 mb-8">
+                    Plus d'informations
+                </div>
+                <div class="mb-24">Vous souhaitez obtenir plus d’informations sur les différentes offres Taxi Lyonnais ?<br>Contactez-nous !</div>
+                    <a href="#" class="c-btn c-btn--red">
+                        <svg class="c-btn__icon mr-16" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Icon / Phone</title>
+                            <g id="Icon-/-Phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M8.26487622,3.24991726 L5.7079056,3.24991726 C5.01703314,3.25076961 4.35896132,3.54090076 3.89352271,4.04976823 C3.42774534,4.55900607 3.19779449,5.2403953 3.25999958,5.92739112 C3.55420573,8.69325401 4.49317146,11.3397384 6.00195007,13.6641453 C7.36987505,15.8126502 9.19969915,17.6388497 11.3578955,19.0075408 C13.670205,20.5041329 16.3085914,21.4408422 19.0552429,21.7386972 C19.7580997,21.802215 20.4418614,21.5714309 20.9521287,21.1042231 C21.462725,20.6367141 21.752274,19.9757972 21.74946,19.2838954 L21.7494662,16.7277612 C21.78024,15.4992933 20.8702793,14.4274554 19.633854,14.2533715 C18.8625242,14.1518118 18.1117528,13.9651574 17.3891752,13.6960604 L17.2084218,13.636112 C16.3589198,13.3904376 15.4342449,13.6201334 14.79707,14.2489693 L14.122,14.921 L13.9094221,14.7873392 C12.4272571,13.8173116 11.160735,12.5533045 10.1888418,11.0741826 L10.054,10.864 L10.7251715,10.1952677 C11.3585203,9.55607552 11.5891925,8.63159661 11.3421505,7.78108693 L11.2818737,7.60009796 C11.0129748,6.88090387 10.826022,6.13190857 10.7252144,5.3690902 C10.5513647,4.14130803 9.4990032,3.23803372 8.26487622,3.24991726 Z M5.70874158,4.74995306 L8.27216954,4.74995306 C8.76147976,4.74527698 9.17181238,5.09747811 9.23908896,5.57251754 C9.35379883,6.44078209 9.56828403,7.30008141 9.87750471,8.12711267 C10.009585,8.47779481 9.9255219,8.87117652 9.66260133,9.13652935 L8.58002504,10.2169446 C8.3406902,10.4558053 8.29078543,10.8252799 8.45817446,11.1190767 C9.74181207,13.3720832 11.6108951,15.2374638 13.8681914,16.5184554 C14.16138,16.6848368 14.5295529,16.6351601 14.768161,16.3970247 L15.8536994,15.3136366 C16.1171422,15.0536582 16.5129346,14.9694147 16.8639902,15.1011146 C17.6940944,15.4102582 18.5548097,15.6242465 19.4314111,15.7396323 C19.9073159,15.8066686 20.2617549,16.2241604 20.2496979,16.7091205 L20.2494662,19.2869456 C20.250566,19.5588889 20.1379738,19.8158888 19.9391748,19.9979119 C19.7400469,20.1802362 19.4729046,20.2704024 19.2034746,20.2461009 C16.7031666,19.974837 14.2885262,19.1175645 12.1670748,17.7445362 C10.1889696,16.4900178 8.5168776,14.821238 7.26368951,12.8529916 C5.87980156,10.7209368 5.02081644,8.2998786 4.75273388,5.78040279 C4.72971721,5.52517996 4.81910064,5.26031942 5.00036188,5.06214516 C5.18192766,4.86363795 5.43899892,4.7503002 5.70874158,4.74995306 Z" id="Path" fill="#081121" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                        04 78 26 81 81
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transferts mb-80 md:pt-128 pt-80 relative">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="md:col-50 col-100 md:order-1 order-2">
+                <ul class="md:pr-64 pr-0">
+                    <li class="md:pl-32 pl-0 md:mb-64 mb-24">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="images/illustration/diamond-blue.svg" alt="">
+                            </div>
+                            <div class="col-expand">
+                                <h4 class="mb-4 txt-20 txt-title">Accueil personnalisé</h4>
+                                <p class="txt-grey-600">Votre chauffeur vous attend avec une pancarte à votre nom</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="md:mb-64 mb-24">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="images/illustration/map-blue.svg" alt="">
+                            </div>
+                            <div class="col-expand">
+                                <h4 class="mb-4 txt-20 txt-title">Suivi du chauffeur</h4>
+                                <p class="txt-grey-600">Suivez l'arrivée de votre chauffeur en temps réel</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="md:pl-32 pl-0 md:mb-0 mb-32">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="images/illustration/phone-blue.svg" alt="">
+                            </div>
+                            <div class="col-expand">
+                                <h4 class="mb-4 txt-20 txt-title">Assistance téléphonique</h4>
+                                <p class="txt-grey-600">Disponible 7j/7 24h/24. Taxi Lyon s'adapte à toute attente ou retard</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="c-btn md:none">Réserver un transfert gare ou aéroport</a>
+            </div>
+            <div class="md:col-50 col-100 md:order-2 order-1">
+                <div class="relative txt-blue-500 txt-14 txt-uppercase txt-title mb-8">
+                    <span class="relative transferts__subtitle txt-letter-spacing">Transferts</span>
+                    <img class="transferts__textsvg" src="images/textsvg/transferts.svg" alt="">
+                </div>
+                <h3 class="relative txt-32 txt-title mb-8">Transferts gares et aéroports</h3>
+                <p class="mb-24">Vous aimez vous deplacer à titre personel ou dans le cadre de deplacements professionnels vers les gares et aeroports ? Facilitez votre transfert vers les gares et aéroports de Lyon avec nos taxis : Prix forfaitaire et accueil personnalisé. </p>
+                <a href="#" class="c-btn md:inline-flex none">Réserver un transfert gare ou aéroport</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="clients py-80">
+        <div class="container">
+            <div class="row md:mb-64 mb-0">
+
+                <div class="col-100 txt-center mb-64">
+                    <div class="relative txt-red-500 txt-14 txt-uppercase txt-title">
+                        <span class="relative clients__subtitle txt-letter-spacing">Avis clients</span>
+                        <img class="clients__textsvg" src="images/textsvg/clients.svg" alt="">
+                    </div>
+                    <h3 class="relative txt-32 txt-title mb-8">Ce que nos clients disent de nous</h3>
+                </div>
+
+                <div class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-48 md:txt-left txt-center">
+                    <div class="flex mb-16 md:justify-start justify-center">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-16" src="images/icon/star.svg" alt="">
+                    </div>
+                    <p class="mb-16">Comme d’habitude au top ! A l’heure, véhicule propre chauffeur sympa. Je recommande a 200%.</p>
+                    <div class="flex align-items-center md:justify-start justify-center">
+                        <div class="pr-16" >
+                            <img src="images/clients/1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="txt-title mb-4">Clément Jacquelin</div>
+                            <div class="flex">
+                                    <img src="images/icon/check-red-500.svg" alt="">
+                                <div class="pl-8 txt-14 txt-red-500">
+                                    Avis vérifié
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-48 md:txt-left txt-center">
+                    <div class="flex mb-16 md:justify-start justify-center">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="" src="images/icon/star.svg" alt="">
+                    </div>
+                    <p class="mb-16">Comme d’habitude au top ! A l’heure, véhicule propre chauffeur sympa. Je recommande a 200%.</p>
+                    <div class="flex align-items-center md:justify-start justify-center">
+                        <div class="pr-16" >
+                            <img src="images/clients/1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="txt-title mb-4">Clément Jacquelin</div>
+                            <div class="flex">
+                                    <img src="images/icon/check-red-500.svg" alt="">
+                                <div class="pl-8 txt-14 txt-red-500">
+                                    Avis vérifié
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-48 md:txt-left txt-center">
+                    <div class="flex mb-16 md:justify-start justify-center">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="" src="images/icon/star.svg" alt="">
+                    </div>
+                    <p class="mb-16">Comme d’habitude au top ! A l’heure, véhicule propre chauffeur sympa. Je recommande a 200%.</p>
+                    <div class="flex align-items-center md:justify-start justify-center">
+                        <div class="pr-16" >
+                            <img src="images/clients/1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="txt-title mb-4">Clément Jacquelin</div>
+                            <div class="flex">
+                                    <img src="images/icon/check-red-500.svg" alt="">
+                                <div class="pl-8 txt-14 txt-red-500">
+                                    Avis vérifié
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-48 md:txt-left txt-center">
+                    <div class="flex mb-16 md:justify-start justify-center">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                        <img class="" src="images/icon/star.svg" alt="">
+                    </div>
+                    <p class="mb-16">Comme d’habitude au top ! A l’heure, véhicule propre chauffeur sympa. Je recommande a 200%.</p>
+                    <div class="flex align-items-center md:justify-start justify-center">
+                        <div class="pr-16" >
+                            <img src="images/clients/1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="txt-title mb-4">Clément Jacquelin</div>
+                            <div class="flex">
+                                    <img src="images/icon/check-red-500.svg" alt="">
+                                <div class="pl-8 txt-14 txt-red-500">
+                                    Avis vérifié
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row md:txt-center txt-left">
+
+                <div class="md:col-33 col-100 md:mb-0 mb-24">
+                    <div class="row align-items-center">
+                        <div class="md:col-100 col-auto">
+                            <img src="images/illustration/phone-red.svg" class="md:mb-24 mb-0" alt="">
+                        </div>
+                        <div class="md:col-100 col-expand">
+                            <p class="md:px-24 px-0">Central d'appel <span class="txt-bold">ouvert H24 7/7</span> et <span class="txt-bold">100% des réservations</span> sont servies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-33 col-100 md:mb-0 mb-24">
+                    <div class="row align-items-center">
+                        <div class="md:col-100 col-auto">
+                            <img src="images/illustration/star-yellow.svg" class="md:mb-24 mb-0" alt="">
+                        </div>
+                        <div class="md:col-100 col-expand">
+                            <p class="md:px-24 px-0">Une note de <span class="txt-bold">4.8 / 5</span> sur plus de 1700 avis clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-33 col-100" md:mb-0 mb-24>
+                    <div class="row align-items-center">
+                        <div class="md:col-100  col-auto">
+                            <img src="images/illustration/dialogue-red.svg" class="md:mb-24 mb-0" alt="">
+                        </div>
+                        <div class="md:col-100 col-expand">
+                            <p class="md:px-24 px-0"><span class="txt-bold">Rappel de notre central</span> après commande et <span class="txt-bold">suivi de la commande</span> par SMS</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="actualites md:pt-128 pt-80">
+
+        <div class="container">
+
+            <div class="row lg:mb-64 mb-0 align-items-center">
+                <div class="md:col-50 col-100">
+                    <div class="col-100 md:mb-0 mb-24">
+                        <div class="relative txt-blue-500 txt-14 txt-uppercase txt-title mb-8">
+                            <span class="relative actualites__subtitle txt-letter-spacing">Actualités</span>
+                            <img class="actualites__textsvg" src="images/textsvg/ACTUALITES.svg" alt="">
+                        </div>
+                        <h3 class="relative txt-32 txt-title">Découvrez les dernieres actualités de TL Taxi Lyon</h3>
+                    </div>
+                </div>
+                <div class="md:col-50 col-100 md:txt-right">
+                    <a href="#" class="c-btn">Voir toutes les pages actus</a>
+                </div>
+            </div>
+
+            <div class="row lg:flex none">
+
+                <article class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-32">
+                    <img src="images/article/article-1.png" class="actualites__img mb-16" alt="">
+                    <h4 class="txt-title">Découvrez les dernieres actualités de TL Taxi Lyon</h4>
+                </article>
+
+                <article class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-32">
+                    <img src="images/article/article-1.png" class="actualites__img mb-16" alt="">
+                    <h4 class="txt-title">L'importance de l'eau s'imbrique avec la campagne de sensibilisation TL</h4>
+                </article>
+
+                <article class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-32">
+                    <img src="images/article/article-1.png" class="actualites__img mb-16" alt="">
+                    <h4 class="txt-title">Une journée dédiée pour des femmes qui le méritent.</h4>
+                </article>
+
+                <article class="lg:col-25 md:col-50 col-100 lg:mb-0 mb-32">
+                    <img src="images/article/article-1.png" class="actualites__img mb-16" alt="">
+                    <h4 class="txt-title">Le 4L Trophy : souvenir d'une action solidaire..</h4>
+                </article>
+
+            </div>
+       
+        </div>
+    </section>
+
+    <section class="chauffeur lg:py-128 md:py-80 py-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-50 md:flex none">
+                    <img class="block chauffeur__img" src="images/decorative/decorative-devenir-chauffeur.png" 
+                    srcset="images/decorative/decorative-devenir-chauffeur@2x.png 2x"
+                    alt="">
+                </div>
+                <div class="md:col-50 col-100">
+                    <div class="relative txt-red-500 txt-14 txt-uppercase txt-title mb-8">
+                        <span class="relative chauffeur__subtitle txt-letter-spacing">Devenir chauffeur</span>
+                        <img class="chauffeur__textsvg" src="images/textsvg/devenir-chauffeur.svg" alt="">
+                    </div>
+                    <h3 class="relative txt-32 txt-title mb-8">Devenez chauffeur Taxi Lyonnais</h3>
+                    <p class="mb-24">
+                        Que vous souhaitiez devenir chauffeur de taxi ou que vous soyez déjà en activité, Taxi Lyon Académie vous propose un panel de formations certifiées et adaptées à chaque profil.
+                    </p>
+                    <a href="#" class="c-btn c-btn--red">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="c-footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-100">
+
+                    <div class="c-footer__reservation relative md:p-64 px-24 py-32">
+                        <div class="row align-items-center md:txt-left txt-center">
+                            <div class="lg:col-50 col-100 lg:mb-0 mb-24">
+                                <div class="relative txt-blue-500 txt-14 txt-uppercase txt-title mb-8">
+                                    <span class="relative c-footer__reservationsubtitle txt-letter-spacing">Réservation</span>
+                                    <img class="c-footer__reservationtextsvg" src="images/textsvg/reservation.svg" alt="">
+                                </div>
+                                <h3 class="relative txt-32 txt-title mb-8">Réserver un Taxi à Lyon</h3>
+                                <p>
+                                Avec TL Taxi Lyon, vous bénéficiez d'un savoir faire de plus de 50 ans dans la mobilité. 1er compagnie de taxi à Lyon en terme de qualité. Prix fixes, garantis du taxi et qualité de service seront au RDV.
+                                </p>
+                            </div>
+                            <div class="lg:col-50 col-100 lg:txt-right">
+                                <a href="#" class="c-btn mb-24">Réserver un Taxi en ligne</a>
+                                <div class="flex align-items-center mb-24 lg:justify-end md:justify-start justify-center">
+                                    <div class="c-footer__orline"></div>
+                                    <div class="px-16 txt-letter-spacing txt-uppercase txt-blue-300 inlineblock relative">ou</div>
+                                    <div class="c-footer__orline"></div>
+                                </div>
+                                <a class="c-btn" href="#">
+                                    <svg class="c-btn__icon mr-16 lg:flex none" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Icon / Phone</title>
+                                        <g id="Icon-/-Phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path d="M8.26487622,3.24991726 L5.7079056,3.24991726 C5.01703314,3.25076961 4.35896132,3.54090076 3.89352271,4.04976823 C3.42774534,4.55900607 3.19779449,5.2403953 3.25999958,5.92739112 C3.55420573,8.69325401 4.49317146,11.3397384 6.00195007,13.6641453 C7.36987505,15.8126502 9.19969915,17.6388497 11.3578955,19.0075408 C13.670205,20.5041329 16.3085914,21.4408422 19.0552429,21.7386972 C19.7580997,21.802215 20.4418614,21.5714309 20.9521287,21.1042231 C21.462725,20.6367141 21.752274,19.9757972 21.74946,19.2838954 L21.7494662,16.7277612 C21.78024,15.4992933 20.8702793,14.4274554 19.633854,14.2533715 C18.8625242,14.1518118 18.1117528,13.9651574 17.3891752,13.6960604 L17.2084218,13.636112 C16.3589198,13.3904376 15.4342449,13.6201334 14.79707,14.2489693 L14.122,14.921 L13.9094221,14.7873392 C12.4272571,13.8173116 11.160735,12.5533045 10.1888418,11.0741826 L10.054,10.864 L10.7251715,10.1952677 C11.3585203,9.55607552 11.5891925,8.63159661 11.3421505,7.78108693 L11.2818737,7.60009796 C11.0129748,6.88090387 10.826022,6.13190857 10.7252144,5.3690902 C10.5513647,4.14130803 9.4990032,3.23803372 8.26487622,3.24991726 Z M5.70874158,4.74995306 L8.27216954,4.74995306 C8.76147976,4.74527698 9.17181238,5.09747811 9.23908896,5.57251754 C9.35379883,6.44078209 9.56828403,7.30008141 9.87750471,8.12711267 C10.009585,8.47779481 9.9255219,8.87117652 9.66260133,9.13652935 L8.58002504,10.2169446 C8.3406902,10.4558053 8.29078543,10.8252799 8.45817446,11.1190767 C9.74181207,13.3720832 11.6108951,15.2374638 13.8681914,16.5184554 C14.16138,16.6848368 14.5295529,16.6351601 14.768161,16.3970247 L15.8536994,15.3136366 C16.1171422,15.0536582 16.5129346,14.9694147 16.8639902,15.1011146 C17.6940944,15.4102582 18.5548097,15.6242465 19.4314111,15.7396323 C19.9073159,15.8066686 20.2617549,16.2241604 20.2496979,16.7091205 L20.2494662,19.2869456 C20.250566,19.5588889 20.1379738,19.8158888 19.9391748,19.9979119 C19.7400469,20.1802362 19.4729046,20.2704024 19.2034746,20.2461009 C16.7031666,19.974837 14.2885262,19.1175645 12.1670748,17.7445362 C10.1889696,16.4900178 8.5168776,14.821238 7.26368951,12.8529916 C5.87980156,10.7209368 5.02081644,8.2998786 4.75273388,5.78040279 C4.72971721,5.52517996 4.81910064,5.26031942 5.00036188,5.06214516 C5.18192766,4.86363795 5.43899892,4.7503002 5.70874158,4.74995306 Z" id="Path" fill="#081121" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                    Commander un taxi au 04 78 26 81 81
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="c-footer__black txt-white md:pb-0 pb-80">
+            
+            <div class="container">
+                
+                <div class="row mb-64 justify-between align-items-center">
+                    <div class="lg:col-expand col-100 lg:txt-left txt-center lg:mb-0 mb-32">
+                        <img src="images/logo/logo-lettre-blanc.svg" alt="">
+                    </div>
+                    <div class="lg:col-auto col-100 lg:txt-right txt-center">
+                        <div class="row align-items-center">
+                            <div class="lg:col-auto col-100 lg:mb-0 mb-24">
+                                <div class="txt-14 txt-center">
+                                    <a href="" class="mb-4 txt-white no-underline">
+                                        4.8 / 5 sur 1710 avis clients
+                                    </a>
+                                    <div class="flex justify-center">
+                                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                                        <img class="mr-4" src="images/icon/star.svg" alt="">
+                                        <img class="mr-16" src="images/icon/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:col-auto col-50 txt-right">
+                                <a href="#"><img class="inlineblock c-footer__app" src="images/logo/logo-appstore.svg" alt=""></a>
+                            </div>
+                            <div class="lg:col-auto col-50 lg:txt-right txt-left">
+                                <a href="#"><img class="inlineblock c-footer__app" src="images/logo/logo-google-play.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row md:mb-64 mb-0 align-items-start justify-between">
+
+                    <div class="md:col-expand col-100 md:mb-0 mb-8">
+                        <div class="row align-items-center md:mb-16 mb-0">
+                            <div class="col-expand">
+                                <h4 class="txt-title">Services</h4></div>
+                            <div class="col-auto">
+                                <div class="c-footer__plus p-8" onclick="footerVisibility(this,'js-footer__1');">
+                                    <img class="md:none block" src="images/icon/plus-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="js-footer__1" class="c-footer__items">
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi VAN</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi PMR</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi VIP</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi VSL</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi Events</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi Business</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Taxi Navette</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-expand col-100 md:mb-0 mb-8">
+                        <div class="row align-items-center md:mb-16 mb-0">
+                            <div class="col-expand">
+                                <h4 class="txt-title">Visite de Lyon</h4></div>
+                            <div class="col-auto">
+                                <div class="c-footer__plus p-8" onclick="footerVisibility(this,'js-footer__2');">
+                                    <img class="md:none block" src="images/icon/plus-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="js-footer__2" class="c-footer__items">
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Visiter Lyon</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Presqu’île et Croix-Rousse</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Fourvière et Vieux Lyon</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-expand col-100 md:mb-0 mb-8">
+                        <div class="row align-items-center md:mb-16 mb-0">
+                            <div class="col-expand">
+                                <h4 class="txt-title">Réservation</h4></div>
+                            <div class="col-auto">
+                                <div class="c-footer__plus p-8" onclick="footerVisibility(this,'js-footer__3');">
+                                    <img class="md:none block" src="images/icon/plus-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="js-footer__3" class="c-footer__items">
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Gare de Lyon</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Aéroport de St-Exupery</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Stations de Ski</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Groupama Stadium</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Eurexpo Lyon</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-expand col-100 md:mb-0 mb-8">
+                        <div class="row align-items-center md:mb-16 mb-0">
+                            <div class="col-expand">
+                                <h4 class="txt-title">Informations</h4></div>
+                            <div class="col-auto">
+                                <div class="c-footer__plus p-8" onclick="footerVisibility(this,'js-footer__4');">
+                                    <img class="md:none block" src="images/icon/plus-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="js-footer__4" class="c-footer__items">
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Tarifs Taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Devis et estimation</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Stations de taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Les taxis Lyonnais</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">ZUPC du Grand Lyon</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Devenez chauffeur de Taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Formation initiale de taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Formation continue de taxi</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Formation mobilité de taxi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-expand col-100 md:mb-0 mb-8">
+                        <div class="row align-items-center md:mb-16 mb-0">
+                            <div class="col-expand">
+                                <h4 class="txt-title">Divers</h4></div>
+                            <div class="col-auto">
+                                <div class="c-footer__plus p-8" onclick="footerVisibility(this,'js-footer__5');">
+                                    <img class="md:none block" src="images/icon/plus-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="js-footer__5" class="c-footer__items">
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Nous contacter</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">CGU</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">CGV</a>
+                            </li>
+                            <li>
+                                <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">RGPD</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="c-footer__menu mb-32 py-32 md:mt-0 mt-24">
+                    <div class="row justify-md:between align-items-center">
+                        <div class="md:col-expand">
+                            <ul class="row">
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock mr-24" href="#">Services</a>
+                                </li>
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock mr-24" href="#">Devenez Chauffeur</a>
+                                </li>
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock mr-24" href="#">Offre entreprise</a>
+                                </li>
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock mr-24" href="#">Contact</a>
+                                </li>
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock mr-24" href="#">Connexion</a>
+                                </li>
+                                <li class="md:col-auto col-100">
+                                    <a class="txt-white no-underline c-footer__link mb-4 inlineblock" href="#">Réserver un taxi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:col-auto md:txt-right justify-md:end">
+                            <a class="inlineblock txt-white no-underline mb-4 c-footer__link" href="#">
+                                <div class="flex">
+                                    Français <img class="ml-8" src="images/flag/fr-flag.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="txt-14 txt-grey-400 txt-center mb-64">
+                    Nos taxis desservent les villes de : Lyon, Paris, Villeurbanne, Caluire-et-Cuire, Venissieux, Montpellier, Marseille, Taxi Saint-Priest, Toulouse, Vaulx-en-Velin, Bordeaux, Saint-Etienne, Oullins, St-Genis-Laval, Tassin-la-Demi-Lune, Ecully, Bron, Saint-Denis, Meyzieu, Grenoble, Rillieux-la-Pape, Francheville, Dardilly, Chazay-d'Azergues, Sainte-Foy-les-Lyon, Villefranche-sur-Saone, Bourgoin-Jallieu, Valence, Marcy-l'Etoile, Dijon, Aix-en-Provence, Decines-Charpieu, Genève, Genas
+                </p>
+
+                <div class="row justify-between align-items-center">
+                    <div class="md:col-expand col-100 md:mb-0 mb-24">
+                        <div class="row md:txt-left md:justify-start txt-center justify-center">
+                            <div class="col-auto">
+                                Paiement sécurisé
+                            </div>
+                            <div class="col-auto">
+                                <img src="images/logo/logo-stripe.svg" alt="">
+                            </div>
+                            <div class="col-auto">
+                                <img src="images/logo/logo-paypal.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-expand col-100">
+                        <div class="row md:txt-right md:justify-end txt-center justify-center align-items-center">
+                            <div class="col-auto">Suivez nous sur</div>
+                            <div class="col-auto">
+                                <a href="#" class="c-footer__sociallink"><img src="images/logo/logo-facebook.svg" alt=""></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="c-footer__sociallink"><img src="images/logo/logo-linkedin.svg" alt=""></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="c-footer__sociallink"><img src="images/logo/logo-instagram.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mt-128 md:block none">
+                    <img class="c-footer__textsvg absolute" src="images/textsvg/taxi-lyonnais.svg" alt="">
+                    <img src="images/decorative/decorative-footer-bottom.png" 
+                        srcset="images/decorative/decorative-footer-bottom@2x.png 2x"
+                        alt="" class="c-footer__decorative relative">
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+  </body>
+</html>
