@@ -1,0 +1,9 @@
+/* ===============
+   Text weight
+   =============== */
+
+@each $name, $size in $font--weight {
+   .txt-#{$name} { 
+         font-family: $size;
+   }
+}

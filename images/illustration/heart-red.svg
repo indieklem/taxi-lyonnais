@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / heart-red</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E04F50" offset="0%"></stop>
+            <stop stop-color="#AE3D3E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECC6C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECC6C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECC6C7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M32,53 L16.2598846,37.5952175 L16.0311937,37.3648309 C11.9147578,33.0958272 11.9909881,26.3683854 16.2598846,22.1904349 C20.6063975,17.9365217 27.6534872,18.9365217 32,23.1904349 C36.3465128,18.9365217 43.3936025,17.9365217 47.7401154,22.1904349 C52.0014025,26.3609381 52.0849571,33.0718515 47.9907793,37.3419786 L47.7401154,37.5952175 L32,53 Z" id="path-9"></path>
+        <filter x="-5.3%" y="-6.0%" width="110.5%" height="111.9%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.4 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration-/-Heart---Red" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <path d="M23.5,33 L12.3162338,22.1260359 L12.1537429,21.9634101 C9.22890685,18.9499957 9.28307049,14.2012132 12.3162338,11.2520717 C15.4045456,8.24930943 20.4116882,8.24930943 23.5,11.2520717 C26.5883118,8.24930943 31.5954544,8.24930943 34.6837662,11.2520717 C37.7115228,14.1959563 37.7708906,18.9330717 34.8618695,21.947279 L34.6837662,22.1260359 L23.5,33 Z" id="Path" fill="url(#linearGradient-6)" opacity="0.4" mask="url(#mask-5)" transform="translate(23.500000, 21.000000) rotate(-15.000000) translate(-23.500000, -21.000000) "></path>
+        <path d="M47,33 L37.8873016,24.3914451 L37.7549016,24.2626996 C35.3717019,21.8770799 35.4158352,18.1176271 37.8873016,15.7828901 C40.4037038,13.4057033 44.4835978,13.4057033 47,15.7828901 C49.5164022,13.4057033 53.5962962,13.4057033 56.1126984,15.7828901 C58.5797593,18.1134654 58.6281331,21.8636817 56.2578196,24.2499292 L56.1126984,24.3914451 L47,33 Z" id="Path-Copy" fill="url(#linearGradient-7)" opacity="0.25" mask="url(#mask-5)" transform="translate(47.000000, 23.500000) rotate(-345.000000) translate(-47.000000, -23.500000) "></path>
+        <g id="Path" mask="url(#mask-5)">
+            <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+/* ===============
+   Position 
+   =============== */
+
+   @each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .#{$theAbbrev}relative { 
+            position: relative!important
+        }
+        .#{$theAbbrev}absolute { 
+            position: absolute!important
+        }
+        .#{$theAbbrev}fixed { 
+            position: fixed!important
+        }
+        
+    }
+}

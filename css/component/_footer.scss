@@ -1,0 +1,116 @@
+.c-footer {
+
+    overflow: hidden;
+    margin-top: -15rem;
+
+    &.c-footer--small {
+        margin-top: 0;
+    }
+    
+    .c-footer__reservation {
+
+        top: 15rem;
+        background-color: color("blue-100");
+        border-radius: 2.4rem;
+        overflow: hidden;
+        
+        .c-footer__reservationtextsvg {
+            @include align('vertical');
+            left: 0;
+            z-index: 0;
+        }
+        .c-footer__reservationsubtitle {
+            z-index: 1;
+        }
+        .c-footer__orline {
+            display: block;
+            width: 3.2rem;
+            height: 0.1rem;
+            background-color: color("blue-300");
+        }
+        
+    }
+
+    .c-footer__black {
+        padding-top: calc(15rem + 8rem);
+        background-image: radial-gradient(50% 100%, #152945 0%, #0E1E3A 100%);
+    }
+
+    .c-footer__app {
+        @include transition;
+
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            transform: scale(0.98);
+            opacity: 1;
+        }
+    }
+
+    .c-footer__link {
+        &:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+    }
+
+    .c-footer__sociallink {
+        @include transition;
+
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            transform: scale(0.98);
+            opacity: 1;
+        }
+    }
+
+    .c-footer__items {
+        display: none;
+        @include breakpoint("md") {
+            display: block;
+        }
+        &.c-footer__items--visible {
+            display: block;
+        }
+    }
+
+    .c-footer__plus {
+        @include transition("opacity");
+
+        cursor: pointer;
+        background-color: rgba(255,255,255,0);
+        border-radius: 100%;
+
+        &:hover {
+            background-color: rgba(255,255,255,.1);
+        }
+
+        &.c-footer__plus--hiden {
+            visibility: hidden;
+
+        }
+    }
+
+    .c-footer__menu {
+        border-top: .1rem solid #fff;
+        border-bottom: .1rem solid #fff;
+    }
+
+    .c-footer__textsvg {
+        display: block;
+        z-index: 1;
+        top: -3.2rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .c-footer__decorative {
+        z-index: 2;
+        width: 100%;
+    }
+
+}

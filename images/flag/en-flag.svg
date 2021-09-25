@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="16px" viewBox="0 0 32 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>flag / en-flag</title>
+    <defs>
+        <polygon id="path-1" points="0 0 0 16 32 16 32 0"></polygon>
+        <path d="M16,8 L32,8 L32,16 L16,8 Z M16,8 L16,16 L0,16 L16,8 Z M16,8 L0,8 L0,0 L16,8 Z M16,8 L16,0 L32,0 L16,8 Z" id="path-3"></path>
+    </defs>
+    <g id="flag-/-en-flag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Path"></g>
+        <g id="Group" mask="url(#mask-2)">
+            <polygon id="Path" fill="#012169" fill-rule="nonzero" points="0 0 0 16 32 16 32 0"></polygon>
+            <path d="M0,0 L32,16 M32,0 L0,16" id="Shape" stroke="#FFFFFF" stroke-width="3.2" fill="#000000" fill-rule="nonzero"></path>
+            <g id="Clipped">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Shape"></g>
+                <path d="M0,0 L32,16 M32,0 L0,16" id="Shape" stroke="#C8102E" stroke-width="2.13333333" fill="#000000" fill-rule="nonzero" mask="url(#mask-4)"></path>
+            </g>
+            <path d="M16,0 L16,16 M0,8 L32,8" id="Shape" stroke="#FFFFFF" stroke-width="5.33333333" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M16,0 L16,16 M0,8 L32,8" id="Shape" stroke="#C8102E" stroke-width="3.2" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

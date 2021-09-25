@@ -1,0 +1,6 @@
+.c-btn--green {
+    background-color: color("green-500");
+    &:active {
+        background-color: color("green-700");
+    }
+}

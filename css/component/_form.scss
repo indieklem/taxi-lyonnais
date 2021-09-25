@@ -1,0 +1,304 @@
+.c-form {
+
+
+    .c-form__label {
+        margin-bottom: 0.4rem;
+    }
+
+    .c-form__input {
+        width: 100%;
+        height: 4.8rem;
+        border-radius: .4rem;
+        padding: 0 1.6rem;
+        border: solid 1px color('grey-300');
+        background-color: color('grey-100');
+        font-family: $font--body;
+        font-size: 1.6rem;
+        &:hover {
+            border: solid 1px color('grey-400');
+        }
+        &:focus {
+            border: solid .1rem color('blue-500');
+            background-color: #fff;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            outline: .4rem solid color('blue-100');
+        } 
+
+        &.c-form__input--textarea {
+            max-width: 100%;
+            min-width: 100%;
+            padding: 1.6rem;
+            min-height: 12rem;
+            max-height: 48rem;
+        }
+
+        &.c-form__input--white {
+            background-color: #fff;
+        }
+
+        &.c-form__input--password {
+            padding-right: 5.4rem;
+
+            &[type="password"] {
+                font-size: 2.4rem;
+                letter-spacing: .2rem;
+            }
+        }
+
+        &.c-form__input--select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            overflow: hidden;
+        }
+
+        
+
+    }
+
+    .c-form__error {
+        color: color('orange-500');
+        .c-form__input {
+            border: .1rem solid color("orange-500");
+            background-color: color('orange-100');
+        }
+    }
+
+    .c-form__select {
+        position: relative;
+
+        &:after {
+            content: '';
+            z-index: 2;
+            position: absolute;
+            top: 1.2rem;
+            right: .8rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url("images/icon/chevron-down.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            pointer-events: none;
+        }
+    }
+
+    .c-form__inputIcon {
+        @include transition();
+        position: absolute;
+        @include align('vertical');
+        right: 1.6rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .c-form__link {
+        text-decoration: underline;
+        color: color("blue-500");
+        &:hover {
+            color: color("blue-700");
+        }
+        &:active {
+            color: color("blue-500");
+        }
+    }
+
+    .c-form__suboption {
+        @include transition;
+        padding: .4rem;
+        background-color: #fff;
+        border-radius: .4rem;
+        cursor: pointer;
+        color: color('grey-700');
+
+        &:first-child {
+            margin-left: -.4rem;
+        }
+        &:hover {
+            background-color: color('grey-100');
+            color: color('grey-900');
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: .9;
+        }
+    }
+
+    .c-form__radioLabel {
+        border-radius: .4rem;
+        cursor: pointer;
+        &:hover {
+            background-color: color('grey-100');
+            .c-form__radioControl {
+                background-color: #fff;
+            } 
+        }
+
+        &.c-form__radioLabel--active {
+            background-color: color('green-100');
+        }
+    }
+
+    .c-form__radioService {
+        position: absolute;
+        display: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        
+        &:checked + .c-form__radioControl {
+            background-color: #fff;
+            border: 0.1rem solid color('green-500');
+
+            &:after { 
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .c-form__radioControl {
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        background-color: color('grey-100');
+        border: 0.1rem solid color('grey-300');
+
+        &:after {
+            @include align('both');
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 100%;
+            background-color: color('green-500');
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    
+    .c-form__radio:not(:checked), 
+    .c-form__checkbox:not(:checked), 
+    .c-form__radio:checked,
+    .c-form__checkbox:checked {
+        position: absolute;
+        display: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .c-form__radio:not(:checked) + label,
+    .c-form__checkbox:not(:checked) + label,
+    .c-form__radio:checked + label,
+    .c-form__checkbox:checked + label {
+        position: relative; 
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: 3.2rem;
+        cursor: pointer;
+
+        &:before {
+            content:'';
+            position: absolute;
+            z-index: 2;
+            @include align('vertical');
+            margin-top: -0.2rem;
+            left: .5rem;
+            width: 1rem;
+            height: 1rem;
+            opacity: 0;
+            border-radius: 100%;  
+            background-color: color("blue-500");    
+        }
+
+        &:after {
+            content:'';
+            position: absolute;
+            z-index: 1;
+            @include align('vertical');
+            margin-top: -0.2rem;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+            background-color: color("grey-100");
+            border: .1rem solid color('grey-300');
+            border-radius: 100%;            
+        }
+    }
+
+    .c-form__checkbox:checked + label {
+        &:before {
+            content:'';
+            position: absolute;
+            z-index: 2;
+            @include align('vertical');
+            margin-top: -0.2rem;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0;  
+            background-color: transparent;
+            background-image: url("images/icon/check-simple-blue-500.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+    }
+    .c-form__checkbox:checked + label {
+        &:after {
+            border-radius: .4rem;  
+        }
+    }
+    .c-form__checkbox:not(:checked) + label {
+        &:after {
+            border-radius: .4rem;  
+        }
+    }
+
+
+    .c-form__radio:not(:checked) + label,
+    .c-form__checkbox:not(:checked) + label  {
+        &:hover {
+            &:after {
+                background-color: color("grey-200");
+                border: .1rem solid color('grey-500');
+            }
+        }
+    }
+
+    .c-form__radio:checked + label:after,
+    .c-form__checkbox:checked + label:after  {
+        border: .1rem solid color('blue-500');
+        background-color: #fff;
+    }
+
+    .c-form__radio:checked + label:before,
+    .c-form__checkbox:checked + label:before {
+        opacity: 1;
+    }
+
+    .c-form__toggleBilling {
+        @include transition;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: 1;
+        }
+    }
+
+}

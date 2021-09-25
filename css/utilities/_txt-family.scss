@@ -1,0 +1,12 @@
+/* ===============
+   Text Family
+   =============== */
+
+@each $name, $family in $font--family {
+      .txt-#{$name} { 
+            font-family: #{$family};
+            @if $name == title {
+            line-height: 1.3;
+            }
+      }
+}

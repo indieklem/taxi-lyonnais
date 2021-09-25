@@ -1,0 +1,12 @@
+@each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .#{$theAbbrev}none { display: none!important}
+        .#{$theAbbrev}flex { display: flex!important}
+        .#{$theAbbrev}block { display: block!important}
+        .#{$theAbbrev}inlineblock { display: inline-block!important}
+        .#{$theAbbrev}inline-flex { display: inline-flex!important}
+    }
+}

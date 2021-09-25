@@ -1,0 +1,29 @@
+/* ===============
+   Import utilities 
+   =============== */
+
+@import 'a11y';
+@import 'flex';
+@import 'margin';
+@import 'padding';
+@import 'txt-align';
+@import 'txt-size';
+@import 'txt-color';
+@import 'txt-weight';
+@import 'txt-decoration';
+@import 'txt-transform';
+@import 'txt-spacing';
+@import 'txt-family';
+@import 'grid';
+@import 'position';
+@import 'size';
+@import 'background';
+@import 'display';
+@import 'overflow';
+
+
+.u-block {
+   background: #FFFFFF;
+   box-shadow: 0 .2rem .4rem 0 rgba(8,17,33,0.15);
+   border-radius: .8rem;
+}

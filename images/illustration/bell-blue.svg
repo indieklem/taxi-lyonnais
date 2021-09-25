@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / Bell - Blue</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#306ED1" offset="0%"></stop>
+            <stop stop-color="#24539E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M52,47 C53.1045695,47 54,47.8954305 54,49 L54,51 L10,51 L10,49 C10,47.8954305 10.8954305,47 12,47 L52,47 Z M29,27 C27.8954305,27 27,26.1045695 27,25 C27,23.8954305 27.8954305,23 29,23 L35,23 C36.1045695,23 37,23.8954305 37,25 C37,26.1045695 36.1045695,27 35,27 L34,27 L34,29 L40.8605897,29 C45.5800533,29 49.630257,32.3613705 50.5,37 L51.3479173,41.5224442 C51.7486089,41.8881869 52,42.4147357 52,43 C52,44.1045695 51.1045695,45 50,45 L14,45 C12.8954305,45 12,44.1045695 12,43 C12,42.4147357 12.2513911,41.8881869 12.6520827,41.5224442 L13.5,37 C14.369743,32.3613705 18.4199467,29 23.1394103,29 L30,29 L30,27 L29,27 Z" id="path-9"></path>
+        <filter x="-6.8%" y="-10.7%" width="113.6%" height="121.4%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration-/-Bell---Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <g id="Group" mask="url(#mask-5)" opacity="0.4">
+            <g transform="translate(15.000000, -2.000000)" id="Path-2">
+                <path d="M8.69871795,13.1186985 C18.9159858,13.1186985 27.1987179,21.4014306 27.1987179,31.6186985 C27.1987179,32.4471256 26.5271451,33.1186985 25.6987179,33.1186985 C24.8702908,33.1186985 24.1987179,32.4471256 24.1987179,31.6186985 C24.1987179,23.0582848 17.2591316,16.1186985 8.69871795,16.1186985 C7.87029082,16.1186985 7.19871795,15.4471256 7.19871795,14.6186985 C7.19871795,13.7902713 7.87029082,13.1186985 8.69871795,13.1186985 Z" fill="url(#linearGradient-6)" transform="translate(17.198718, 23.198718) rotate(-45.000000) translate(-17.198718, -23.198718) "></path>
+                <path d="M6.53846154,4.94243815 C18.9648684,4.94243815 29.0384615,15.0160313 29.0384615,27.4424381 C29.0384615,28.2708653 28.3668887,28.9424381 27.5384615,28.9424381 C26.7100344,28.9424381 26.0384615,28.2708653 26.0384615,27.4424381 C26.0384615,16.6728855 17.3080142,7.94243815 6.53846154,7.94243815 C5.71003441,7.94243815 5.03846154,7.27086527 5.03846154,6.44243815 C5.03846154,5.61401102 5.71003441,4.94243815 6.53846154,4.94243815 Z" fill="url(#linearGradient-7)" transform="translate(17.038462, 17.038462) rotate(-45.000000) translate(-17.038462, -17.038462) "></path>
+            </g>
+        </g>
+        <g id="Combined-Shape" mask="url(#mask-5)">
+            <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+        </g>
+    </g>
+</svg>

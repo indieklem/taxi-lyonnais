@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / star-yellow</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#EFC854" offset="0%"></stop>
+            <stop stop-color="#E3AA39" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FEFDFA" offset="0%"></stop>
+            <stop stop-color="#F8E9BB" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-7" points="32 43.5 18.4809392 50.6073909 21.0628501 35.5536954 10.1257001 24.8926091 25.2404696 22.6963046 32 9 38.7595304 22.6963046 53.8742999 24.8926091 42.9371499 35.5536954 45.5190608 50.6073909"></polygon>
+        <filter x="-1.9%" y="-4.3%" width="103.8%" height="99.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration-/-Star---Yellow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <g id="Star" mask="url(#mask-5)">
+            <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+        </g>
+        <circle id="Oval" fill="url(#linearGradient-6)" opacity="0.3" mask="url(#mask-5)" cx="23" cy="23" r="8"></circle>
+        <circle id="Oval-Copy-3" fill="url(#linearGradient-6)" opacity="0.35" mask="url(#mask-5)" cx="43" cy="37" r="6"></circle>
+        <circle id="Oval-Copy-4" fill="url(#linearGradient-6)" opacity="0.3" mask="url(#mask-5)" cx="44" cy="15" r="4"></circle>
+        <circle id="Oval-Copy-5" fill="url(#linearGradient-6)" opacity="0.35" mask="url(#mask-5)" cx="22" cy="9" r="2"></circle>
+        <circle id="Oval-Copy-6" fill="url(#linearGradient-6)" opacity="0.4" mask="url(#mask-5)" cx="33" cy="48" r="2"></circle>
+    </g>
+</svg>

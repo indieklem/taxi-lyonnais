@@ -1,0 +1,43 @@
+/* ===============
+   Margins 
+   =============== */
+
+   @each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        @each $size, $length in $spacers {
+            .#{$theAbbrev}mb-#{$size} { 
+                margin-bottom: #{$length}!important
+            }
+            .#{$theAbbrev}mt-#{$size} { 
+                margin-top: #{$length}!important
+            }
+            .#{$theAbbrev}mr-#{$size} { 
+                margin-right: #{$length}!important
+            }
+            .#{$theAbbrev}ml-#{$size} { 
+                margin-left: #{$length}!important;
+            }
+            .#{$theAbbrev}my-#{$size} { 
+                margin-top: #{$length}!important;
+                margin-bottom: #{$length}!important
+            }
+            .#{$theAbbrev}mx-#{$size} { 
+                margin-left: #{$length}!important;
+                margin-right: #{$length}!important;
+            }
+        }
+
+        .my-auto {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .mx-auto {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+
+    }
+}

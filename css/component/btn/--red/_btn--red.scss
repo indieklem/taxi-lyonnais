@@ -1,0 +1,6 @@
+.c-btn--red {
+    background-color: color("red-500");
+    &:active {
+        background-color: color("red-700");
+    }
+}

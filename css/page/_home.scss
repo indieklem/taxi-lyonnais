@@ -1,0 +1,280 @@
+.p-home {
+
+    padding-top: 6.4rem;
+    @include breakpoint("lg") {
+        padding-top: 11.2rem;
+    }
+
+    .top {
+        .top__background {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            background-image: url('images/decorative/decorative-ville-de-lyon.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: .4;
+    
+            @include breakpoint("md") {
+                opacity: 1;
+            }
+        }
+    }
+
+    .satisfaction {
+
+        overflow: hidden;
+
+        .satisfaction__decorative {
+            display: none;
+            top: .8rem;
+            left: -12.4rem;
+            background-image: url('images/decorative/decorative-points-forts.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 38.8rem;
+            height: 42.7rem;
+
+            @include breakpoint("xl") {
+                display: block;
+                width: 38.8rem;
+            }
+
+            @include retina() {
+                background-image: url('images/decorative/decorative-points-forts@2x.png');
+            }
+        }
+        .satisfaction__textsvg {
+            @include align('vertical');
+            z-index: -1;
+            left: -12.8rem;
+        }
+    }
+
+    .climat {
+        
+        .climat__bloc {
+            background-image: linear-gradient(135deg, #FBFBFC 0%, #F5F6F7 100%);
+            box-shadow: inset 0 -1px 0 0 #D7DAE0;
+            border-radius: 2.4rem;
+            overflow: hidden;
+        }
+        .climat__decorative {
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20rem;
+            background-image: url('images/decorative/decorative-climat.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include retina() {
+                background-image: url('images/decorative/decorative-climat@2x.png');
+            }
+        }
+        .climat__subtitle {
+            z-index: 2;
+        } 
+        .climat__textsvg {
+            @include align('both');
+            z-index: 0;
+        }
+    }
+
+    .application {
+
+        overflow: hidden;
+        background-image: linear-gradient(135deg, #EBF0F7 0%, #D3DCEB 100%);
+      
+        .application__textsvg {
+            @include align('vertical');
+            z-index: 0;
+            left: -40rem;
+        }
+
+        .application__subtitle {
+            z-index: 2;
+        }
+
+        .application__input {
+            background-color: color("grey-100");
+            border: .1rem solid color("grey-300");
+            border-radius: 2.4rem;
+            height: 4.8rem;
+            max-width: 100%;
+            width: 36rem;
+            padding-right: 12rem;
+
+            &:focus-within {
+                outline: none;
+                background-color: color("white");
+                border: .1rem solid color("blue-500");
+            }
+        }
+
+        .application__button {
+            right: .4rem;
+            top: .4rem;
+            min-height: 4rem;
+            max-height: 4rem;
+        }
+
+        .application__logo {
+            @include transition;
+
+            &:hover {
+                opacity: .8;
+            }
+            &:active {
+                transform: scale(0.98);
+                opacity: 1;
+            }
+        }
+
+
+        .application__morearrow {
+            @include transition;
+        }
+
+        .application__more {
+            @include transition;
+            &:hover {
+                opacity: 0.8;
+                .application__morearrow {
+                    transform: translateX(.4rem);
+                }
+            }
+        }
+    }
+
+    .service {
+        overflow: hidden;
+
+        .service__textsvg {
+            @include align('both');
+            z-index: 0;
+        }
+        .service__subtitle {
+            z-index: 1;
+        }
+        .service__block {
+            flex-direction: column;
+        }
+        .service__more {
+            @include transition;
+            &:hover {
+                opacity: 0.8;
+                .service__morearrow {
+                    opacity: 0.8;
+                    transform: translateX(.4rem);
+                }
+            }
+        }
+        .service__morearrow {
+            @include transition;
+        }
+        .service__logo {
+            max-height: 6.4rem;
+        }
+        .service__arrows {
+            @include breakpoint("lg") {
+                top: 0;
+                right: 0;
+            }
+        }
+        .service__arrow {
+            @include transition;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+            &:active {
+                transform: scale(.9) translateY(.1rem);
+            }
+        }
+        .service__decoration {
+            top: 45.5rem;
+            left: 0;
+            z-index: -1;
+            background-color: color('red-100');
+            width: 72rem;
+            max-width: 100%;
+            height: calc(100% - 45.5rem);
+            border-radius: 0;
+
+            @include breakpoint("md") {
+                width: 72rem;
+                border-radius: 0 2.4rem 2.4rem 0;
+            }
+        }
+    }
+
+    .transferts {
+        overflow: hidden;
+
+        .transferts__textsvg {
+            @include align('vertical');
+            left: 0;
+            z-index: 0;
+        }
+        .transferts__subtitle {
+            z-index: 1;
+        }
+    }
+
+    .clients {
+
+        overflow: hidden;
+        background-color: color("grey-100");
+
+        .clients__textsvg {
+            @include align('both');
+            z-index: 0;
+        }
+        .clients__subtitle {
+            z-index: 1;
+        }
+    }
+    
+    .actualites {
+
+        overflow: hidden;
+
+        .actualites__textsvg {
+            @include align('vertical');
+            left: 0;
+            z-index: 0;
+        }
+        .actualites__subtitle {
+            z-index: 1;
+        }
+        .actualites__img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .chauffeur {
+
+        overflow: hidden;
+
+        .chauffeur__textsvg {
+            @include align('vertical');
+            left: 0;
+            z-index: 0;
+        }
+        .chauffeur__subtitle {
+            z-index: 1;
+        }
+        .chauffeur__img {
+            width: 100%;
+        }
+        
+    }
+    
+}

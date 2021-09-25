@@ -1,0 +1,23 @@
+/* ===============
+   Main file 
+   =============== */
+
+@import 'var/var';
+@import 'mixins/mixins';
+@import 'utilities/utilities';
+@import 'component/component';
+@import 'page/page';
+@import 'shame/shame';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; /* base font-size is equivalent "18px" */
+    color: color("grey-900");
+    background-color: #fff;
+    font-family: $font--regular;
+    line-height: 1.4;
+}
+

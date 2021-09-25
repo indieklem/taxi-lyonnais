@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / map-blue</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#306ED1" offset="0%"></stop>
+            <stop stop-color="#24539E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M32,6 C40.836556,6 48,13.163444 48,22 C48,27.6119689 43.1599963,35.7428233 33.479989,46.3925633 C33.437235,46.4396004 33.3922629,46.4845725 33.3452258,46.5273265 C32.5278507,47.270274 31.2629593,47.2099384 30.5200118,46.3925633 L30.5200118,46.3925633 L30.0766785,45.9028258 C20.6922262,35.4932396 16,27.525631 16,22 C16,13.163444 23.163444,6 32,6 Z M32,14 C27.581722,14 24,17.581722 24,22 C24,26.418278 27.581722,30 32,30 C36.418278,30 40,26.418278 40,22 C40,17.581722 36.418278,14 32,14 Z" id="path-8"></path>
+        <filter x="-6.2%" y="-4.9%" width="112.5%" height="109.7%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration-/-Map---Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <path d="M54.909,48 L56,52 L8,52 L9.091,48 L54.909,48 Z M45,30 L45.562,33 L42,33 L42,35 L45.937,35 L48,46 L13.2525823,46.0009416 C19.0422878,43.0088137 23,36.9665934 23,30 L23,30 L45,30 Z M51.364,35 L54.364,46 L50,46 L47.937,35 L51.364,35 Z M21,30 L20.9969636,30.3148707 C20.8616207,37.3266964 16.2156334,43.2337683 9.84028289,45.2548053 L14,30 L21,30 Z M50,30 L50.818,33 L47.562,33 L47,30 L50,30 Z" id="Combined-Shape" fill="url(#linearGradient-6)" opacity="0.4" mask="url(#mask-5)"></path>
+        <g id="Combined-Shape" mask="url(#mask-5)">
+            <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+        </g>
+    </g>
+</svg>

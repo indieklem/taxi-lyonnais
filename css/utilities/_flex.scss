@@ -1,0 +1,52 @@
+@each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .#{$theAbbrev}justify-center {justify-content: center!important}
+        .#{$theAbbrev}justify-start {justify-content: start!important}
+        .#{$theAbbrev}justify-end {justify-content: end!important}
+        .#{$theAbbrev}justify-between {justify-content: space-between!important}
+        .#{$theAbbrev}justify-around {justify-content: space-around!important}
+        
+    }
+}
+
+
+.align-items-center {align-items: center}
+.align-items-start {align-items: flex-start}
+.align-items-end {align-items: flex-end}
+.align-items-stretch {align-items: stretch}
+
+.direction-row {flex-direction: row}
+.direction-row-reverse {flex-direction: row-reverse}
+.direction-column {flex-direction: column}
+.direction-column-reverse {flex-direction: column-reverse}
+
+.align-self-start {align-self: flex-start}
+.align-self-end {align-self: flex-end}
+.align-self-center {align-self: center}
+.align-self-baseline {align-self: baseline}
+.align-self-stretch {align-self: stretch}
+
+.align-content-start {align-content: flex-start}
+.align-content-end {align-content: flex-end}
+.align-content-center {align-content: center}
+.align-content-between {align-content: space-between}
+.align-content-around {align-content: space-around}
+.align-content-stretch {align-content: stretch}
+
+
+@each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .#{$theAbbrev}order-1 {order:1!important;}
+        .#{$theAbbrev}order-2 {order:2!important;}
+        .#{$theAbbrev}order-3 {order:3!important;}
+        .#{$theAbbrev}order-4 {order:4!important;}
+        .#{$theAbbrev}order-5 {order:5!important;}
+        
+    }
+}

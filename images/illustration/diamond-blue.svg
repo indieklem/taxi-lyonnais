@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / diamond-blue</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#306ED1" offset="0%"></stop>
+            <stop stop-color="#24539E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M39.3288962,29.5 L32.6268493,52.1283964 C32.2298351,52.2864719 31.7879282,52.2976482 31.384566,52.1619254 L24.6698962,29.5 L39.3288962,29.5 Z M23.6388962,29.545 L30.0128962,51.055 L11.4339266,32.4990223 C11.0648729,32.1304203 10.8837154,31.6324331 10.9080634,31.1365112 L23.6388962,29.545 Z M40.3598962,29.545 L53.0114721,31.1264793 C53.0387753,31.6257112 52.8576718,32.1279348 52.4861295,32.4990223 L34.0198962,50.942 L40.3598962,29.545 Z M17.2205374,19.7335584 L23.1378962,28.608 L11.2808962,30.09 L17.1082743,19.9061253 C17.1426248,19.8460855 17.1801385,19.7885095 17.2205374,19.7335584 Z M46.8117818,19.9061253 L52.6318962,30.079 L40.8618962,28.608 L46.7406397,19.7918809 C46.7656469,19.8288853 46.7893866,19.8669817 46.8117818,19.9061253 Z M32.7308962,19 L39.0658962,28.5 L24.9338962,28.5 L31.2688962,19 L32.7308962,19 Z M30.0658962,19 L23.999,28.097 L18.0163718,19.1230951 C18.2217215,19.0429452 18.4431103,19 18.6706405,19 L30.0658962,19 Z M45.2494157,19 C45.5004834,19 45.7440735,19.05229 45.9668877,19.1491573 L40,28.097 L33.9338962,19 L45.2494157,19 Z" id="path-7"></path>
+        <filter x="-4.7%" y="-6.0%" width="109.5%" height="112.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Illustration-/-Diamond---Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <g id="Combined-Shape" mask="url(#mask-5)">
+            <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+        </g>
+        <polygon id="Star" fill="url(#linearGradient-9)" opacity="0.4" mask="url(#mask-5)" points="42 7 37.7573593 8.24264069 39 4 37.7573593 -0.242640687 42 1 46.2426407 -0.242640687 45 4 46.2426407 8.24264069"></polygon>
+        <polygon id="Star-Copy" fill="url(#linearGradient-9)" opacity="0.4" mask="url(#mask-5)" points="26 13 23.1715729 13.8284271 24 11 23.1715729 8.17157288 26 9 28.8284271 8.17157288 28 11 28.8284271 13.8284271"></polygon>
+    </g>
+</svg>

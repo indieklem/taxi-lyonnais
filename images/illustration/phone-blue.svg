@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Illustration / phone-blue</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#306ED1" offset="0%"></stop>
+            <stop stop-color="#24539E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="64" height="64" rx="16"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="60" rx="16"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#AABFDF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M35.9988696,26.9529061 L35.9988696,32.3723555 C36.0030071,33.3896676 35.5772105,34.3615795 34.8260861,35.0493194 C34.0749617,35.7370593 33.0681222,36.076889 32.0529199,35.9853218 C26.483038,35.3813075 21.1327742,33.4817972 16.4320274,30.4394185 C12.0585904,27.6658597 8.35067927,23.9652934 5.57161542,19.6005197 C2.51255967,14.8877737 0.608847003,9.52214041 0.0147046317,3.93831086 C-0.0767523269,2.92825615 0.261366323,1.92634464 0.946466037,1.17732006 C1.63156575,0.428295487 2.6005583,0.00113268152 3.61674127,0 L9.04694725,0 C10.8640101,-0.0176707258 12.4127715,1.31162563 12.6670846,3.10732861 C12.8962809,4.84167247 13.3213329,6.54457265 13.9341326,8.18354624 C14.4314219,9.50385966 14.1133567,10.9922775 13.1196017,11.9952257 L10.8208145,14.2894592 C13.3975477,18.8120726 17.1496367,22.5567291 21.6812265,25.1283581 L23.9800137,22.8341245 C24.9849525,21.842338 26.4763246,21.5249029 27.7992586,22.0212071 C29.4414852,22.6327929 31.1477653,23.0570029 32.8855515,23.2857453 C34.705689,23.5420136 36.0444653,25.118951 35.9988696,26.9529061 Z" id="path-7"></path>
+        <filter x="-8.3%" y="-8.3%" width="116.7%" height="116.7%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration-/-Phone---Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Rectangle" fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+        <g id="phone-1" mask="url(#mask-5)">
+            <g transform="translate(12.000000, 16.000000)" id="Path">
+                <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+            </g>
+        </g>
+        <g id="Group" mask="url(#mask-5)" fill="url(#linearGradient-6)" opacity="0.4">
+            <g transform="translate(29.500000, 14.500000)" id="Path-2">
+                <path d="M1.5,0 C11.7172679,0 20,8.28273213 20,18.5 C20,19.3284271 19.3284271,20 18.5,20 C17.6715729,20 17,19.3284271 17,18.5 C17,9.93958638 10.0604136,3 1.5,3 C0.671572875,3 0,2.32842712 0,1.5 C0,0.671572875 0.671572875,0 1.5,0 Z"></path>
+            </g>
+        </g>
+        <g id="Group-Copy" mask="url(#mask-5)" fill="url(#linearGradient-6)" opacity="0.4">
+            <g transform="translate(31.500000, 8.500000)" id="Path-2">
+                <path d="M1.5,0 C13.9264069,0 24,10.0735931 24,22.5 C24,23.3284271 23.3284271,24 22.5,24 C21.6715729,24 21,23.3284271 21,22.5 C21,11.7304474 12.2695526,3 1.5,3 C0.671572875,3 0,2.32842712 0,1.5 C0,0.671572875 0.671572875,0 1.5,0 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

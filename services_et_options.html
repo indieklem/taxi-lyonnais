@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Taxi Lyonnais - Services et Options</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="js/nav.js"></script> 
+    <script src="js/footer.js"></script> 
+    <script src="js/radio.js"></script> 
+
+  </head>
+
+  <body class="p-form">
+
+    <header class="c-header">
+        <nav class="c-header__primary relative bg-white md:py-16 py-8" aria-label="primary">
+            <div class="container">
+                <div class="row justify-between align-items-center lg:flex none xl:txt-16 txt-14">
+                    <div class="col-expand">
+                        <ul class="row align-items-center">
+                            <li class="col-auto">
+                                <a href="#">
+                                <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="row align-items-center">
+                            <li class="col-auto px-8">
+                                <div class="c-header__link p-8 no-underline flex align-items-center">
+                                    En <img class="ml-8" src="images/flag/en-flag.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="col-auto px-8">
+                                <a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Connexion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:none block txt-16">
+                    <div class="row justify-between align-items-center">
+                        <div class="col-expand">
+                            <a href="#">
+                                <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="flex align-items-center">
+                                <a class="c-btn c-btn--blue" href="#">Connexion</a>
+                                <a class="c-btn c-btn--rounded c-btn--secondary mx-8" href="#">
+                                    <img src="images/icon/phone.svg" alt="">
+                                </a>
+                                <div class="c-btn c-btn--rounded c-btn--secondary c-header__toggleButton" id="js-header__toggleMenu">
+                                    <img src="images/icon/menu.svg" class="c-header__btnicon c-header__btnicon--menu" alt="">
+                                    <img src="images/icon/cross.svg" class="c-header__btnicon c-header__btnicon--cross" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="js-header__mobile" class="c-header__mobile relative pt-16 mt-16">
+                        <li class="mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Menu</li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Accueil</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Services</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Devenez Chauffeur</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Offre entreprise</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Contact</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Nos services</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 flex" href="#">En <img class="ml-8" src="images/flag/en-flag.svg" alt=""></a></li>
+                        <li class="pt-16 mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Mon compte</li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Connexion</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Inscription</a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="c-header__secondary relative bg-blue-500 align-items-center" aria-label="secondary">
+            <div class="container">
+                <div class="c-header__stepline"></div>
+                <ul class="row justify-between align-items-center">
+                    <li class="col-20 txt-center">
+                        <a href="index.html" class="block relative c-header__sublink c-header__sublink--step c-header__sublink--first txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">1. Itinéraire & Date</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <a href="services_et_options.html" class="block relative c-header__sublink c-header__sublink--step txt-14 no-underline lg:py-8 py-16 txt-white txt-bold">
+                            <div class="lg:block none mb-8">2. Service & Options</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <div class="block relative c-header__sublink c-header__sublink--step c-header__sublink--disabled txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">3. Identification</div>
+                            <div class="c-header__dot"></div>
+                        </div>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <div class="block relative c-header__sublink c-header__sublink--step c-header__sublink--disabled txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">4. Paiement</div>
+                            <div class="c-header__dot"></div>
+                        </div>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <div class="block relative c-header__sublink c-header__sublink--step c-header__sublink--last c-header__sublink--disabled txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">5. Confirmation</div>
+                            <div class="c-header__dot"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <form class="p-form__content c-form md:mt-64 mt-24 md:pb-64 pb-24">
+        <div class="container">
+            <div class="txt-24 txt-title mb-16">
+                Itinéraire & Date
+            </div>
+            <div class="row mb-32">
+                <div class="md:col-expand col-100 md:mb-0 mb-24">
+                    <label class="c-form__label" for="">Départ</label>
+                    <input class="c-form__input c-form__input--white" type="text">
+                </div>
+                <div class="md:col-expand col-100 md:mb-0 mb-24">
+                    <label class="c-form__label" for="">Arrivée</label>
+                    <input class="c-form__input c-form__input--white" type="text">
+                </div>
+                <div class="md:col-expand col-100 md:mb-0 mb-24">
+                    <label class="c-form__label" for="">Quand</label>
+                    <input class="c-form__input c-form__input--white" type="text">
+                </div>
+                <div class="md:col-expand col-100 md:mb-0 mb-24">
+                    <label class="c-form__label" for="">Passager(s)</label>
+                    <div class="c-form__select">
+                        <select name="" id="" class="c-form__input c-form__input--select c-form__input--white">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lg:col-60 col-100 lg:mb-0 mb-32">
+                    <div class="txt-24 txt-title mb-16">
+                        Choix du service
+                    </div>
+                    <div class="u-block mb-32 p-8">
+                        <label for="service-1" class="p-24 block c-form__radioLabel c-form__radioLabel--active js-labelForm">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input class="c-form__radioService" type="radio" name="service" id="service-1" checked onchange="radioLabel(this);">
+                                    <div class="c-form__radioControl"></div>
+                                </div>
+                                <div class="col-expand">
+                                    <div class="row">
+                                        <div class="col-expand md:mb-0 mb-16">
+                                            <div class="txt-bold txt-20">Taxi Lyon Eco</div>
+                                            <p class="mb-16">Un service de qualité mais économique</p>
+                                            <div class="row">
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/user.svg" alt="">
+                                                        <div class="txt-14">4 pers.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/case.svg" alt="">
+                                                        <div class="txt-14">3 bagages</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:col-auto col-100">
+                                            <div class="txt-bold md:txt-right txt-20">21.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="service-2" class="p-24 block c-form__radioLabel js-labelForm">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input class="c-form__radioService" type="radio" name="service" id="service-2" onchange="radioLabel(this);">
+                                    <div class="c-form__radioControl"></div>
+                                </div>
+                                <div class="col-expand">
+                                    <div class="row">
+                                        <div class="col-expand md:mb-0 mb-16">
+                                            <div class="txt-bold txt-20">Taxi Lyon VIP</div>
+                                            <p class="mb-16">Berlines de standing, chauffeurs sélectionnés, WiFi et chargeurs à bord</p>
+                                            <div class="row">
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/user.svg" alt="">
+                                                        <div class="txt-14">4 pers.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/case.svg" alt="">
+                                                        <div class="txt-14">3 bagages</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/wifi.svg" alt="">
+                                                        <div class="txt-14">Wifi</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:col-auto col-100">
+                                            <div class="txt-bold md:txt-right txt-20">32.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="service-3" class="p-24 block c-form__radioLabel js-labelForm">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input class="c-form__radioService" type="radio" name="service" id="service-3" onchange="radioLabel(this);">
+                                    <div class="c-form__radioControl"></div>
+                                </div>
+                                <div class="col-expand">
+                                    <div class="row">
+                                        <div class="col-expand md:mb-0 mb-16">
+                                            <div class="txt-bold txt-20">Taxi Lyon Minibus</div>
+                                            <p class="mb-16">Le Taxi assez grand pour voyager en groupe, sans contraintes</p>
+                                            <div class="row">
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/user.svg" alt="">
+                                                        <div class="txt-14">8 pers.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/case.svg" alt="">
+                                                        <div class="txt-14">3 bagages</div>
+                                                    </div>
+                                                </div>
+                                            </div>        
+                                        </div>
+                                        <div class="md:col-auto col-100">
+                                            <div class="txt-bold md:txt-right txt-20">32.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="service-4" class="p-24 block c-form__radioLabel js-labelForm">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input class="c-form__radioService" type="radio" name="service" id="service-4" onchange="radioLabel(this);">
+                                    <div class="c-form__radioControl"></div>
+                                </div>
+                                <div class="col-expand">
+                                    <div class="row">
+                                        <div class="col-expand md:mb-0 mb-16">
+                                            <div class="txt-bold txt-20">Taxi Lyon Access</div>
+                                            <p class="mb-16">Un Taxi TL adapté dédié aux personnes à mobilité réduite (TPMR)</p>
+                                            <div class="row">
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/user.svg" alt="">
+                                                        <div class="txt-14">4 pers.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/case.svg" alt="">
+                                                        <div class="txt-14">3 bagages</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:col-auto col-100 sm:mb-0 mb-8">
+                                                    <div class="flex align-items-center">
+                                                        <img class="mr-8" src="images/icon/disabled.svg" alt="">
+                                                        <div class="txt-14">1 Fauteuil</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:col-auto col-100">
+                                            <div class="txt-bold md:txt-right txt-20">37.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="txt-24 txt-title mb-16">
+                        Options
+                    </div>
+                    <div class="u-block p-24">
+                        <div class="row">
+                            <div class="col-50 mb-24">
+                                <label class="c-form__label" for="">Réhausseur</label>
+                                <div class="c-form__select">
+                                    <select name="" id="" class="c-form__input c-form__input--select">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-50 mb-24">
+                                <label class="c-form__label" for="">Siége bébé</label>
+                                <div class="c-form__select">
+                                    <select name="" id="" class="c-form__input c-form__input--select">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-50 mb-24">
+                                <label class="c-form__label" for="">N° Vol / Train</label>
+                                <input class="c-form__input" type="text">
+                            </div>
+                            <div class="col-50 mb-24">
+                                <label class="c-form__label" for="">N° Chambre</label>
+                                <input class="c-form__input" type="text">
+                            </div>
+                            <div class="col-100">
+                                <label class="c-form__label" for="">Commentaire</label>
+                                <textarea class="c-form__input c-form__input--textarea" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="lg:col-40 col-100">
+                    <div class="txt-24 txt-title mb-16">
+                        Votre trajet
+                    </div>
+                    <div class="u-block overflow-hidden">
+                        <div class="p-24 pb-80 bg-blue-900 txt-white">
+                            <div class="row align-items-center justify-between">
+                                <div class="col-expand">
+                                    <div class="txt-32 txt-bold">
+                                        27.00€
+                                    </div>
+                                    <div class="txt-14">
+                                        2 passagers
+                                    </div>
+                                </div>
+                                <div class="col-expand txt-right">
+                                    <button class="c-btn c-btn--green c-btn--form c-btn--expand">
+                                        <div class="txt-left pr-16">
+                                            Continuer<br>
+                                            <span class="txt-14 txt-regular">vers la prochaine étape</span>
+                                        </div>
+                                        <div>
+                                            <img class="block" src="images/icon/chevron-right-white.svg" alt="">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-form__picture"></div>
+                        <div class="p-24">
+                            <div class="txt-24 txt-title mb-16">
+                                Récapitulatif
+                            </div>
+                            <div class="txt-bold mb-24">
+                                Vendredi 13 Mai à 11h35
+                            </div>
+                            <div class="txt-bold mb-24 relative">
+                                <div class="p-form__lineAdresse"></div>
+                                <div class="row mb-24">
+                                    <div class="col-auto">
+                                        <div class="p-form__dotAdresse"></div>
+                                    </div>
+                                    <div class="col-auto">11h35</div>
+                                    <div class="col-expand">
+                                        <div>Lyon Part-Dieu</div>
+                                        <div class="txt-14 txt-grey-700 txt-regular">Entre 11 min et 17 min</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="p-form__dotAdresse"></div>
+                                    </div>
+                                    <div class="col-auto">11h52</div>
+                                    <div class="col-expand">
+                                        <div>Lyon Perrache</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Passagers
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        2 passagers
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Services
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        TL éco
+                                    </div>
+                                </div>
+                                <div class="col-100 mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Options
+                                    </div>
+                                    <ul class="txt-grey-700">
+                                        <li class="mb-4">1 Réhausseur (+8.00€)</li>
+                                        <li class="mb-4">1 siége bébé (+8.00€)</li>
+                                        <li class="mb-4">N-°Vol/Train : 438</li>
+                                        <li class="mb-4">N° Chmabre : 34</li>
+                                    </ul>
+                                </div>
+                                <div class="col-100">
+                                    <div class="txt-bold mb-4">
+                                        Commentaires
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        Je dois arriver avant 14h15 à la porte A de l'aéroport, si ce n'est pas possible merci de me prévenir avant.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="p-form__hr">
+                        <div class="p-24">
+                            <div class="txt-24 txt-title mb-8">
+                                Prix
+                            </div>
+                            <div class="row align-items-center justify-between mb-4">
+                                <div class="col-expand">Trajet en Taxi Eco</div>
+                                <div class="col-expand txt-right txt-grey-700">21.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-4">
+                                <div class="col-expand">+ 1 Réhausseur</div>
+                                <div class="col-expand txt-right txt-grey-700">+8.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-8">
+                                <div class="col-expand">+ 1 Siège-bébé</div>
+                                <div class="col-expand txt-right txt-grey-700">+8.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-4 txt-bold txt-18">
+                                <div class="col-expand">Total</div>
+                                <div class="col-expand txt-right">37.00€</div>
+                            </div>
+                        </div>
+                        <hr class="p-form__hr">
+                        <div class="p-24">
+                            <button class="c-btn c-btn--green c-btn--form c-btn--expand mb-16">
+                                <div class="txt-left pr-16">
+                                    Continuer<br>
+                                    <span class="txt-14 txt-regular">vers la prochaine étape</span>
+                                </div>
+                                <div>
+                                    <img class="block" src="images/icon/chevron-right-white.svg" alt="">
+                                </div>
+                            </button>
+                            <button class="c-btn c-btn--secondary c-btn--expand mb-16">Recevoir un devis par email</button>
+                            <div class="txt-center">
+                                Je suis <a class="c-form__link" href="#">une entreprise</a> • <a class="c-form__link" href="#">un chauffeur</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer class="c-footer c-footer--small">
+        <div class="c-footer__black txt-white py-24">
+            <div class="container">
+                  <div class="row justify-between align-items-center">
+                    <div class="lg:col-expand col-100 lg:mb-0 mb-24">
+                        <div class="row lg:txt-left lg:justify-start txt-center justify-center align-items-center">
+                            <div class="sm:col-auto col-100 sm:mb-0 mb-24">
+                                <a href="#" class="no-underline txt-white">Besoin d'aide ?</a>
+                            </div>
+                            <div class="col-auto">
+                                Paiement sécurisé
+                            </div>
+                            <div class="col-auto txt-center">
+                                <img class="inline-block" src="images/logo/logo-stripe.svg" alt="">
+                            </div>
+                            <div class="col-auto txt-center">
+                                <img class="inline-block" src="images/logo/logo-paypal.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-auto col-100 lg:txt-right txt-center">
+                        <div class="row align-items-center">
+                            <div class="lg:col-auto col-50 txt-right">
+                                <a href="#" class="block"><img class="inlineblock c-footer__app" src="images/logo/logo-appstore.svg" alt=""></a>
+                            </div>
+                            <div class="lg:col-auto col-50 lg:txt-right txt-left">
+                                <a href="#" class="block"><img class="inlineblock c-footer__app" src="images/logo/logo-google-play.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+/* ===============
+   Text align
+   =============== */
+
+   @each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .#{$theAbbrev}txt-left { 
+            text-align: left!important
+        }
+        .#{$theAbbrev}txt-center { 
+            text-align: center!important
+        }
+        .#{$theAbbrev}txt-right { 
+            text-align: right!important
+        }
+    }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Taxi Lyonnais - Paiement</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="js/nav.js"></script> 
+    <script src="js/footer.js"></script> 
+
+  </head>
+
+  <body class="p-form">
+
+    <header class="c-header">
+        <nav class="c-header__primary relative bg-white md:py-16 py-8" aria-label="primary">
+            <div class="container">
+                <div class="row justify-between align-items-center lg:flex none xl:txt-16 txt-14">
+                    <div class="col-expand">
+                        <ul class="row align-items-center">
+                            <li class="col-auto">
+                                <a href="#">
+                                <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="row align-items-center">
+                            <li class="col-auto px-8">
+                                <div class="c-header__link p-8 no-underline flex align-items-center">
+                                    En <img class="ml-8" src="images/flag/en-flag.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="col-auto px-8">
+                                <a class="c-header__link p-8 txt-blue-900 no-underline" href="#">Connexion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:none block txt-16">
+                    <div class="row justify-between align-items-center">
+                        <div class="col-expand">
+                            <a href="#">
+                                <img class="block c-header__logo" src="images/logo/logo-simple-blanc.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="flex align-items-center">
+                                <a class="c-btn c-btn--blue" href="#">Connexion</a>
+                                <a class="c-btn c-btn--rounded c-btn--secondary mx-8" href="#">
+                                    <img src="images/icon/phone.svg" alt="">
+                                </a>
+                                <div class="c-btn c-btn--rounded c-btn--secondary c-header__toggleButton" id="js-header__toggleMenu">
+                                    <img src="images/icon/menu.svg" class="c-header__btnicon c-header__btnicon--menu" alt="">
+                                    <img src="images/icon/cross.svg" class="c-header__btnicon c-header__btnicon--cross" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="js-header__mobile" class="c-header__mobile relative pt-16 mt-16">
+                        <li class="mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Menu</li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Accueil</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Services</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Devenez Chauffeur</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Offre entreprise</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Contact</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Nos services</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 flex" href="#">En <img class="ml-8" src="images/flag/en-flag.svg" alt=""></a></li>
+                        <li class="pt-16 mb-4 txt-uppercase txt-grey-600 txt-14 txt-letter-spacing">Mon compte</li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Connexion</a></li>
+                        <li class="mb-4"><a class="c-header__link p-8 block" href="#">Inscription</a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="c-header__secondary relative bg-blue-500 align-items-center" aria-label="secondary">
+            <div class="container">
+                <div class="c-header__stepline"></div>
+                <ul class="row justify-between align-items-center">
+                    <li class="col-20 txt-center">
+                        <a href="index.html" class="block relative c-header__sublink c-header__sublink--step c-header__sublink--first txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">1. Itinéraire & Date</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <a href="services_et_options.html" class="block relative c-header__sublink c-header__sublink--step txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">2. Service & Options</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <a href="identification.html" class="block relative c-header__sublink c-header__sublink--step txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">3. Identification</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <a href="paiement.html" class="block relative c-header__sublink c-header__sublink--step txt-14 no-underline lg:py-8 py-16 txt-white txt-bold">
+                            <div class="lg:block none mb-8">4. Paiement</div>
+                            <div class="c-header__dot"></div>
+                        </a>
+                    </li>
+                    <li class="col-20 txt-center">
+                        <div class="block relative c-header__sublink c-header__sublink--step c-header__sublink--last c-header__sublink--disabled txt-14 no-underline lg:py-8 py-16 txt-blue-100">
+                            <div class="lg:block none mb-8">5. Confirmation</div>
+                            <div class="c-header__dot"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <form class="p-form__content c-form md:mt-64 mt-24 md:pb-64 pb-24">
+        <div class="container">
+            <div class="row">
+                <div class="lg:col-60 col-100 lg:mb-0 mb-32">
+                    <div class="txt-24 txt-title mb-16">
+                        Paiement
+                    </div>
+                    <div class="u-block mb-32">
+                        <div class="p-24">
+                            <div class="row align-items-center justify-between mb-24">
+                                <div class="sm:col-expand col-100 sm:mb-0 mb-8">
+                                    <input class="c-form__radio" id="credit" checked name="paiement" type="radio">
+                                    <label class="c-form__label" for="credit">Carte de crédit</label>
+                                </div>
+                                <div class="sm:col-expand col-100 sm:txt-right">
+                                    <img class="inline-block" src="images/logo/logo-paiement.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">Numéro de carte</label>
+                                        <input class="c-form__input" type="text">
+                                    </div>
+                                </div>
+                                <div class="md:col-50 col-100">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">Date d'expiration</label>
+                                        <input class="c-form__input" type="text">
+                                    </div>
+                                </div>
+                                <div class="md:col-50 col-100">
+                                    <div class="mb-24">
+                                        <label class="c-form__label" for="">CVC</label>
+                                        <input class="c-form__input" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-100 mb-24">
+                                    <input class="c-form__checkbox" id="memoriser" name="memoriser" type="checkbox">
+                                    <label class="c-form__label" for="memoriser">Mémoriser ma carte pour mes déplacements futurs</label>
+                                </div>
+                                <div class="col-100">
+                                    <button class="c-btn c-btn--expand c-btn--green">Confirmer mon paiement de 27.00€</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-form__hr"></div>
+                        <div class="p-24">
+                            <div class="row align-items-center justify-between">
+                                <div class="col-expand">
+                                    <input class="c-form__radio" id="paypal" name="paiement" type="radio">
+                                    <label class="c-form__label" for="paypal">Paypal</label>
+                                </div>
+                                <div class="col-expand txt-right">
+                                    <img class="inline-block" src="images/logo/logo-paypal-color.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-40 col-100">
+                    <div class="txt-24 txt-title mb-16">
+                        Votre trajet
+                    </div>
+                    <div class="u-block overflow-hidden">
+                        <div class="p-24 pb-80 bg-blue-900 txt-white">
+                            <div class="row justify-between">
+                                <div class="col-expand ">
+                                    <div class="txt-18 txt-bold">Clément Jacquelin</div>
+                                    <div class="txt-14 txt-blue-100">06.80.70.34.23</div>
+                                    <div class="txt-14 txt-blue-100">votreadresse@email.com</div>
+                                </div>
+                                <div class="col-expand txt-right">
+                                    <div class="txt-18 txt-bold">
+                                        27.00€
+                                    </div>
+                                    <div class="txt-14 txt-blue-100">
+                                        2 passagers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-form__picture"></div>
+                        <div class="p-24">
+                            <div class="txt-24 txt-title mb-16">
+                                Récapitulatif
+                            </div>
+                            <div class="txt-bold mb-24">
+                                Vendredi 13 Mai à 11h35
+                            </div>
+                            <div class="txt-bold mb-24 relative">
+                                <div class="p-form__lineAdresse"></div>
+                                <div class="row mb-24">
+                                    <div class="col-auto">
+                                        <div class="p-form__dotAdresse"></div>
+                                    </div>
+                                    <div class="col-auto">11h35</div>
+                                    <div class="col-expand">
+                                        <div>Lyon Part-Dieu</div>
+                                        <div class="txt-14 txt-grey-700 txt-regular">Entre 11 min et 17 min</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="p-form__dotAdresse"></div>
+                                    </div>
+                                    <div class="col-auto">11h52</div>
+                                    <div class="col-expand">
+                                        <div>Lyon Perrache</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Passagers
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        2 passagers
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Services
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        TL éco
+                                    </div>
+                                </div>
+                                <div class="col-100 mb-24">
+                                    <div class="txt-bold mb-4">
+                                        Options
+                                    </div>
+                                    <ul class="txt-grey-700">
+                                        <li class="mb-4">1 Réhausseur (+8.00€)</li>
+                                        <li class="mb-4">1 siége bébé (+8.00€)</li>
+                                        <li class="mb-4">N-°Vol/Train : 438</li>
+                                        <li class="mb-4">N° Chmabre : 34</li>
+                                    </ul>
+                                </div>
+                                <div class="col-100">
+                                    <div class="txt-bold mb-4">
+                                        Commentaires
+                                    </div>
+                                    <div class="txt-grey-700">
+                                        Je dois arriver avant 14h15 à la porte A de l'aéroport, si ce n'est pas possible merci de me prévenir avant.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="p-form__hr">
+                        <div class="p-24">
+                            <div class="txt-24 txt-title mb-8">
+                                Prix
+                            </div>
+                            <div class="row align-items-center justify-between mb-4">
+                                <div class="col-expand">Trajet en Taxi Eco</div>
+                                <div class="col-expand txt-right txt-grey-700">21.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-4">
+                                <div class="col-expand">+ 1 Réhausseur</div>
+                                <div class="col-expand txt-right txt-grey-700">+8.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-8">
+                                <div class="col-expand">+ 1 Siège-bébé</div>
+                                <div class="col-expand txt-right txt-grey-700">+8.00€</div>
+                            </div>
+                            <div class="row align-items-center justify-between mb-4 txt-bold txt-18">
+                                <div class="col-expand">Total</div>
+                                <div class="col-expand txt-right">37.00€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer class="c-footer c-footer--small">
+        <div class="c-footer__black txt-white py-24">
+            <div class="container">
+                  <div class="row justify-between align-items-center">
+                    <div class="lg:col-expand col-100 lg:mb-0 mb-24">
+                        <div class="row lg:txt-left lg:justify-start txt-center justify-center align-items-center">
+                            <div class="sm:col-auto col-100 sm:mb-0 mb-24">
+                                <a href="#" class="no-underline txt-white">Besoin d'aide ?</a>
+                            </div>
+                            <div class="col-auto">
+                                Paiement sécurisé
+                            </div>
+                            <div class="col-auto txt-center">
+                                <img class="inline-block" src="images/logo/logo-stripe.svg" alt="">
+                            </div>
+                            <div class="col-auto txt-center">
+                                <img class="inline-block" src="images/logo/logo-paypal.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-auto col-100 lg:txt-right txt-center">
+                        <div class="row align-items-center">
+                            <div class="lg:col-auto col-50 txt-right">
+                                <a href="#" class="block"><img class="inlineblock c-footer__app" src="images/logo/logo-appstore.svg" alt=""></a>
+                            </div>
+                            <div class="lg:col-auto col-50 lg:txt-right txt-left">
+                                <a href="#" class="block"><img class="inlineblock c-footer__app" src="images/logo/logo-google-play.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </body>
+</html>

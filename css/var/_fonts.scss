@@ -1,0 +1,69 @@
+/* ===============
+    Font face
+    =============== */
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('fonts/poppins-regular-webfont.woff2') format('woff2'),
+       url('fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/* ===============
+   Font weight
+   =============== */
+
+$font--light:   'poppinsregular';
+$font--regular: 'poppinsregular';
+$font--bold:    'poppinssemibold';
+
+$font--weight: (
+  light: $font--light,
+  regular: $font--regular,
+  bold: $font--bold
+) !default;
+
+
+
+/* ===============
+   Font family
+   =============== */
+
+$font--body:   'poppinsregular';
+$font--title:   'poppinssemibold';
+
+$font--family: (
+  body: $font--body,
+  title: $font--title
+) !default;
+
+/* ===============
+    Font size
+    =============== */
+
+
+$font--sizes: (
+  14: 1.4rem,
+  16: 1.6rem,
+  18: 1.8rem,
+  20: 2rem,
+  24: 2.4rem,
+  32: 3.2rem,
+  48: 4.8rem,
+  64: 6.4rem,
+  80: 8rem,
+  128: 12.8rem
+) !default;

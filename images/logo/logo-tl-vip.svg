@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="64px" viewBox="0 0 116 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo-tl-vip</title>
+    <defs>
+        <linearGradient x1="0.0102901832%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#C1923C" offset="0%"></stop>
+            <stop stop-color="#E9CE78" offset="40%"></stop>
+            <stop stop-color="#61471A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100.009662%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#C1923C" offset="0%"></stop>
+            <stop stop-color="#E9CE78" offset="40%"></stop>
+            <stop stop-color="#61471A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="6.98888932%" y1="75.0051409%" x2="93.0213222%" y2="24.9948591%" id="linearGradient-3">
+            <stop stop-color="#C1923C" offset="0%"></stop>
+            <stop stop-color="#E9CE78" offset="40%"></stop>
+            <stop stop-color="#61471A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="6.98780532%" y1="75.010989%" x2="93.0121947%" y2="25%" id="linearGradient-4">
+            <stop stop-color="#FCEA9A" offset="0%"></stop>
+            <stop stop-color="#EFD769" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-635.000000, -283.000000)" fill-rule="nonzero">
+            <g id="logo-tl-vip" transform="translate(635.000000, 283.000000)">
+                <path d="M30.4658162,62.9790403 C19.0411352,62.9790403 11.4246811,55.3364682 11.4246811,40.0513239 L11.4246811,32.4087517 L0,32.4087517 L22.8493622,9.48103533 L22.8493622,20.9448935 L34.2740433,20.9448935 L22.8493622,32.4087517 L22.8493622,32.4087517 L22.8493622,40.0513239 C22.8493622,43.87261 22.8493622,51.5151821 30.4658162,51.5151821 L39.7748157,51.5151821 L47.3912697,62.9790403 L34.2740433,62.9790403" id="Path" fill="#020202"></path>
+                <polygon id="Path" fill="#EFD769" points="2.35263803 32.4087517 12.0509229 23.2461569 5.13264376 32.4087517"></polygon>
+                <polygon id="Path" fill="#EFD769" points="6.54591913 32.4087517 20.4417164 19.3229699 10.2652875 32.366293"></polygon>
+                <path d="M64.7398595,62.9790403 C53.3151784,62.9790403 45.6987244,55.3364682 45.6987244,40.0513239 L45.6987244,0 L57.1234055,11.4638582 L57.1234055,40.0513239 C57.1234055,43.87261 57.1234055,51.5151821 64.7398595,51.5151821 L72.3563136,51.5151821 L72.3563136,62.9790403 L64.7398595,62.9790403" id="Path" fill="#020202"></path>
+                <ellipse id="Oval" fill="url(#linearGradient-1)" cx="92.7260968" cy="41.4397245" rx="20.5601946" ry="20.6306989"></ellipse>
+                <ellipse id="Oval" fill="url(#linearGradient-2)" cx="92.7260968" cy="41.4397245" rx="21.8973054" ry="21.9723949"></ellipse>
+                <ellipse id="Oval" fill="url(#linearGradient-3)" cx="92.7260968" cy="41.4397245" rx="20.5771201" ry="20.6476824"></ellipse>
+                <ellipse id="Oval" fill="url(#linearGradient-4)" opacity="0.9" style="mix-blend-mode: lighten;" cx="92.7260968" cy="41.4397245" rx="19.2527033" ry="19.318724"></ellipse>
+                <ellipse id="Oval" fill="#FFD730" opacity="0.3" style="mix-blend-mode: overlay;" transform="translate(92.141429, 34.747416) rotate(-4.660000) translate(-92.141429, -34.747416) " cx="92.1414289" cy="34.7474158" rx="17.0443177" ry="11.3404731"></ellipse>
+                <ellipse id="Oval" fill="#FFFFFF" opacity="0.3" style="mix-blend-mode: overlay;" transform="translate(92.831213, 42.459498) rotate(-6.140000) translate(-92.831213, -42.459498) " cx="92.8312132" cy="42.4594979" rx="19.1815231" ry="11.9686513"></ellipse>
+                <ellipse id="Oval" fill="#FFFFFF" opacity="0.3" style="mix-blend-mode: overlay;" transform="translate(92.448403, 41.718643) rotate(-53.730000) translate(-92.448403, -41.718643) " cx="92.448403" cy="41.7186428" rx="11.9548439" ry="19.2419278"></ellipse>
+                <ellipse id="Oval" fill="#B08544" opacity="0.8" style="mix-blend-mode: soft-light;" transform="translate(92.416554, 41.718376) rotate(-42.970000) translate(-92.416554, -41.718376) " cx="92.4165537" cy="41.7183763" rx="11.9472635" ry="19.2711053"></ellipse>
+                <ellipse id="Oval" fill="#B08544" opacity="0.8" style="mix-blend-mode: soft-light;" transform="translate(92.470268, 41.744598) rotate(-62.750000) translate(-92.470268, -41.744598) " cx="92.4702685" cy="41.7445977" rx="11.9605723" ry="19.1818637"></ellipse>
+                <polygon id="Path" fill="#211E1F" points="87.3861163 36.8669188 98.2861083 34.714261 98.5696096 27.4453257 95.243758 31.6699698 91.4905387 25.6365837 90.2676747 32.7526675 84.7922905 29.1946256"></polygon>
+                <path d="M108.746039,41.4397245 C107.527406,33.8735781 97.5160002,37.3084897 97.5160002,37.3084897 L97.0166993,40.9939078 L98.1676301,40.9939078 L96.4750848,53.3791205 L100.342551,53.3791205 C100.342551,53.3791205 100.389096,52.8738616 101.104196,48.7723479 C104.781251,49.1587224 109.592311,46.7046075 108.746039,41.4397245 Z M101.307302,45.3841409 L101.903924,40.6415003 C101.903924,40.6415003 105.085909,39.7243916 105.424418,42.5946021 C105.6783,44.8321774 102.889832,46.2800202 101.298839,45.3841409 L101.307302,45.3841409 Z" id="Shape" fill="#211E1F"></path>
+                <polygon id="Path" fill="#211E1F" points="85.6978023 39.1851657 83.5948147 44.0424449 80.9967576 36.8669188 76.6172965 36.8669188 83.5948147 53.3196783 90.073032 38.1916313"></polygon>
+                <polygon id="Path" fill="#211E1F" points="88.6132116 53.2517443 95.3241539 53.2517443 93.9574236 51.8973107 95.9207762 37.3169814 91.1901119 38.3105158 91.9686828 39.1851657 90.2972943 52.0968668"></polygon>
+                <ellipse id="Oval" fill="#FFFFFF" opacity="0.1" style="mix-blend-mode: soft-light;" transform="translate(92.842223, 41.642471) rotate(-9.400000) translate(-92.842223, -41.642471) " cx="92.8422231" cy="41.6424709" rx="19.1825252" ry="7.90934833"></ellipse>
+                <path d="M81.4071998,57.0645386 C82.6645701,57.9839822 84.0285979,58.7467503 85.4693087,59.3360809 L104.0323,35.5082393 L81.4071998,57.0645386 Z" id="Path" fill="#EFD769" opacity="0.15" style="mix-blend-mode: screen;"></path>
+            </g>
+        </g>
+    </g>
+</svg>
