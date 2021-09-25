@@ -71,11 +71,16 @@
     }
     
     .p-form__lineAdresse {
+        display: none;
         position: absolute;
         top: 1.6rem;
         left: .6rem;
         width: .4rem;
-        height: calc(100% - 3.2rem);
+        height: calc(100% - 3rem);
         background-color: color("grey-900");
+
+        @include breakpoint("sm") {
+            display: block;
+        }
     }
 }
