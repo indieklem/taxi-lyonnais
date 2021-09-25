@@ -8,33 +8,39 @@
         .#{$theAbbrev}justify-end {justify-content: end!important}
         .#{$theAbbrev}justify-between {justify-content: space-between!important}
         .#{$theAbbrev}justify-around {justify-content: space-around!important}
-        
+
+        .#{$theAbbrev}align-items-center {align-items: center!important}
+        .#{$theAbbrev}align-items-start {align-items: flex-start!important}
+        .#{$theAbbrev}align-items-end {align-items: flex-end!important}
+        .#{$theAbbrev}align-items-stretch {align-items: stretch!important}
+
+        .#{$theAbbrev}direction-row {flex-direction: row!important}
+        .#{$theAbbrev}direction-row-reverse {flex-direction: row-reverse!important}
+        .#{$theAbbrev}direction-column {flex-direction: column!important}
+        .#{$theAbbrev}direction-column-reverse {flex-direction: column-reverse!important}
+
+        .#{$theAbbrev}align-self-start {align-self: flex-start!important}
+        .#{$theAbbrev}align-self-end {align-self: flex-end!important}
+        .#{$theAbbrev}align-self-center {align-self: center!important}
+        .#{$theAbbrev}align-self-baseline {align-self: baseline!important}
+        .#{$theAbbrev}align-self-stretch {align-self: stretch!important}
+
+        .#{$theAbbrev}align-content-start {align-content: flex-start!important}
+        .#{$theAbbrev}align-content-end {align-content: flex-end!important}
+        .#{$theAbbrev}align-content-center {align-content: center!important}
+        .#{$theAbbrev}align-content-between {align-content: space-between!important}
+        .#{$theAbbrev}align-content-around {align-content: space-around!important}
+        .#{$theAbbrev}align-content-stretch {align-content: stretch!important}
+
+        .#{$theAbbrev}flex-nowrap {flex-wrap: nowrap!important}
+        .#{$theAbbrev}flex-wrap {flex-wrap: wrap!important}
+        .#{$theAbbrev}flex-wrap-reverse {flex-wrap: wrap-reverse!important}
+
     }
 }
 
 
-.align-items-center {align-items: center}
-.align-items-start {align-items: flex-start}
-.align-items-end {align-items: flex-end}
-.align-items-stretch {align-items: stretch}
 
-.direction-row {flex-direction: row}
-.direction-row-reverse {flex-direction: row-reverse}
-.direction-column {flex-direction: column}
-.direction-column-reverse {flex-direction: column-reverse}
-
-.align-self-start {align-self: flex-start}
-.align-self-end {align-self: flex-end}
-.align-self-center {align-self: center}
-.align-self-baseline {align-self: baseline}
-.align-self-stretch {align-self: stretch}
-
-.align-content-start {align-content: flex-start}
-.align-content-end {align-content: flex-end}
-.align-content-center {align-content: center}
-.align-content-between {align-content: space-between}
-.align-content-around {align-content: space-around}
-.align-content-stretch {align-content: stretch}
 
 
 @each $theBreakpoint in map-keys($breakpoints) {
